@@ -1,0 +1,182 @@
+.input-check {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 20px;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+    position: fixed !important;
+    left: -9999px !important;
+    height: 0;
+    width: 0;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+    color: #cfd8dc;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label:hover {
+    color: #455a64;
+}
+
+input[type="checkbox"]:not(:checked):hover + label::before {
+    border: 2px solid #455a64;
+}
+
+input[type="checkbox"]:not(:checked) + label::before,
+input[type="checkbox"]:checked + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border-radius: 4px;
+    width: 14px;
+    height: 14px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+input[type="checkbox"]:not(:checked) + label::before {
+    border: 2px solid #cfd8dc;
+}
+
+input[type="checkbox"]:checked + label::before {
+    border: 2px solid #455a64;
+}
+
+input[type="checkbox"]:not(:checked) + label::after,
+input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 3px;
+    border-radius: 2px;
+    transform: translate(1%, -50%);
+    border: 2px solid #455a64;
+    background-color: #455a64;
+    transition: all 0.3s;
+}
+
+input[type="checkbox"]:checked + label::after {
+    opacity: 1;
+}
+
+input[type="checkbox"]:not(:checked) + label::after {
+    opacity: 0;
+}
+.field-radio {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.field-radio .f-radio {
+    position: relative;
+}
+
+.field-radio input[type="radio"]:checked,
+.field-radio input[type="radio"]:not(:checked) {
+    position: fixed !important;
+    left: -9999px !important;
+    height: 0;
+    width: 0;
+}
+
+.field-radio input[type="radio"]:checked + label,
+.field-radio input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 0 0 0 28px;
+    transition: all 0.2s ease-in-out;
+}
+
+.field-radio input[type="radio"]:not(:checked) + label:hover,
+.field-radio input[type="radio"]:checked + label:hover {
+    color: #212121;
+}
+
+.field-radio input[type="radio"]:not(:checked) + label:hover::before,
+.field-radio input[type="radio"]:checked + label:hover::before {
+    border-color: #212121;
+}
+
+.field-radio input[type="radio"]:checked + label {
+    color: #212121;
+}
+
+.field-radio input[type="radio"]:checked + label:after,
+.field-radio input[type="radio"]:checked + label::before,
+.field-radio input[type="radio"]:not(:checked) + label:after,
+.field-radio input[type="radio"]:not(:checked) + label::before {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.field-radio input[type="radio"]:not(:checked) + label::before {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #cfd8dc;
+    background: transparent;
+}
+
+.field-radio input[type="radio"]:checked + label::before {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: 2px solid #212121;
+}
+
+.field-radio input[type="radio"]:checked + label::after,
+.field-radio input[type="radio"]:not(:checked) + label::after {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    /* transform: translate(6px, 6px); */
+    border: 2px solid #212121;
+    background-color: #cfd8dc;
+}
+
+.field-radio input[type="radio"]:checked + label::after {
+    opacity: 1;
+}
+
+.field-radio input[type="radio"]:not(:checked) + label::after {
+    opacity: 0;
+}
+.unit {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    gap: 10px;
+    background: var(--primary);
+    border-radius: 8px;
+    padding: 5px;
+}

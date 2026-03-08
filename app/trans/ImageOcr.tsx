@@ -83,7 +83,7 @@ export default function ImageOcr({
 
   return (
     <div className="">
-      <h1 className="text-2xl font-semibold">Изображение → текст (DE/RU)</h1>
+      <h2 className="text-2xl font-semibold">Изображение → текст (DE/RU)</h2>
       <form
         onSubmit={handleSubmit}
         className="flex items-center gap-4 border border-slate-800 rounded-lg p-4 bg-slate-900"
@@ -95,17 +95,13 @@ export default function ImageOcr({
           accept="image/*"
           className="text-sm file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:bg-slate-700 file:text-slate-50 hover:file:bg-slate-600 transition-all duration-200 cursor-pointer"
         />
-        <button
-          type="submit"
-          disabled={loading}
-          className="rounded-md bg-emerald-500 px-4 py-2 text-sm font-medium text-slate-950 hover:bg-emerald-400 disabled:opacity-50 cursor-pointer transition-all duration-200"
-        >
+        <button type="submit" disabled={loading} className="btn btn-emerald">
           {loading ? <Spinner /> : "Загрузить"}
         </button>
         <button
           type="submit"
           disabled={loading}
-          className="rounded-md bg-red-500 px-4 py-2 text-sm font-medium text-slate-950 hover:bg-red-700 disabled:opacity-50   cursor-pointer transition-all duration-200"
+          className="btn btn-red"
           onClick={(e) => {
             e.preventDefault();
             setPages([]);

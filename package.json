@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "browser-image-compression": "^2.0.2",
+    "framer-motion": "^12.35.0",
     "next": "16.1.1",
     "office-text-extractor": "^4.0.0",
     "pdf-parse-new": "^2.0.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "sass": "^1.97.3",
+    "sass.js": "^0.11.1",
     "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
