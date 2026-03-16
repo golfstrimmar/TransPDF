@@ -33,12 +33,27 @@ export default function Item({
         currentFrage.map((foo) => {
           return (
             <div key={foo.name}>
-              <div className="flex items-center gap-2 mb-1 mt-4">
-                <h2 className="text-green-900! bg-amber-100 text-center ">
+              <button
+                onClick={(e) => {
+                  const next = (e.currentTarget as HTMLButtonElement)
+                    .nextElementSibling;
+                  [...document.querySelectorAll(".unit")].forEach((foo) => {
+                    if (foo !== next) foo.classList.remove("_active");
+                  });
+                  if (next && !next.classList.contains("_active")) {
+                    next.classList.add("_active");
+                  } else {
+                    next.classList.remove("_active");
+                  }
+                }}
+                className="flex rounded items-center  bg-amber-100 gap-2 mt-2 cursor-pointer hover:bg-amber-300 transition"
+              >
+                <h2 className=" text-center px-2 !text-green-900">
                   {foo.name}
                 </h2>
-              </div>
-              <div className="unit" key={foo.name}>
+              </button>
+
+              <div className="unit transition" key={foo.name}>
                 {RenderFields &&
                   RenderFields.map((el, index) => {
                     return (
