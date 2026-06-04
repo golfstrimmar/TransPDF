@@ -18,6 +18,7 @@ export default function Item({
   headers,
 }) {
   // ====>====>====>====>====>====>====>====>====>====>
+  // ====>====>====>====>====>====>====>====>====>====>
   const RenderFields = [
     { checket: Musikrichtung },
     { checket: Takt },
@@ -26,9 +27,81 @@ export default function Item({
     { checket: zahl },
     { checket: schlagwerte },
   ];
+
+  const getGroupKey = (val: number) => {
+    if (val >= 20 && val <= 30) return "20-30";
+    if (val > 30 && val <= 40) return "30-40";
+    if (val > 40 && val <= 50) return "40-50";
+    if (val > 50 && val <= 60) return "50-60";
+    if (val > 60 && val <= 70) return "60-70";
+    return null;
+  };
+
+  const getTextClass = (group: string) => {
+    switch (group) {
+      case "20-30":
+        return "text-[var(--grey-100)]";
+      case "30-40":
+        return "text-[var(--grey-100)]";
+      case "40-50":
+        return "text-[var(--grey-100)]";
+      case "50-60":
+        return "text-[var(--grey-100)]";
+
+      default:
+        return "";
+    }
+  };
+
+  // группировка
+  const grouped: Record<string, { name: string; raw: string }[]> = {
+    "20-30": [],
+    "30-40": [],
+    "40-50": [],
+    "50-60": [],
+  };
+  const res = headers[2].toLowerCase();
+
+  const allValues = currentFrage
+    .sort((a, b) => a[res].split("-")[0].trim() - b[res].split("-")[0].trim())
+    .map((foo) => {
+      return { resName: foo.name, resRes: foo[res] };
+    });
+  allValues.forEach((foo) => {
+    const raw = foo.resRes.split("-")[0].trim();
+    const rrr = Number(raw);
+    if (!Number.isFinite(rrr)) return;
+
+    const key = getGroupKey(rrr);
+    if (!key) return;
+
+    grouped[key].push({ name: foo.resName, raw: foo.resRes });
+  });
+
+  // рендер
+  const groupOrder = ["20-30", "30-40", "40-50", "50-60"] as const;
+
   // ====>====>====>====>====>====>====>====>====>====>
   return (
     <section className="mt-4">
+      <div className="grid grid-cols-4 gap-4">
+        {groupOrder.map((groupKey) => (
+          <div key={groupKey} className="p-2 bg-[var(--grey-20)]">
+            <h4 className="mb-2 !text-blue-600">{groupKey}</h4>
+            {grouped[groupKey] &&
+              grouped[groupKey].map((foo) => (
+                <div
+                  key={foo.name}
+                  className={`flex justify-between gap-2    ${getTextClass(groupKey)}`}
+                >
+                  <p>{foo.name}</p>
+                  <p>{foo.raw}</p>
+                </div>
+              ))}
+          </div>
+        ))}
+      </div>
+
       {currentFrage &&
         currentFrage.map((foo) => {
           return (

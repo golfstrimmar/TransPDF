@@ -2,7 +2,7 @@
     position: relative;
     border-bottom: 1px var(--slate-800) solid;
     padding: 30px 0;
-    background: var(--slate-200);
+    background: var(--navy-950);
 }
 
 .logoContainer {
@@ -40,11 +40,12 @@
 }
 
 .navigation {
+    background: var(--navy-950);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
 
     li a {

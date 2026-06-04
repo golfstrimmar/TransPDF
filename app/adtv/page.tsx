@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Item from "./Item";
 import ClearIcon from "@/components/icons/ClearIcon";
 import TanzenDef from "./halpers/Tanzen";
@@ -15,6 +15,7 @@ const headers = TanzenDef.headers;
 export default function ADTF() {
   const [countR, setCountR] = useState<number>(0);
   const [countF, setCountF] = useState<number>(0);
+  // ====>====>====>====>====>====>====>====>====>====>
   return (
     <section className="bg-[var(--slate)] w-[100vw] min-h-[100vh] pt-[60px] text-[var(--slate-300)]">
       <div className="container">

@@ -22,6 +22,7 @@ const Navbar: React.FC = () => {
   const pages = [
     { title: "Home", path: "/" },
     { title: "ADTV", path: "/adtv" },
+    { title: "Elemente", path: "/elemente" },
   ];
 
   useEffect(() => {
@@ -40,9 +41,9 @@ const Navbar: React.FC = () => {
   if (!hasMounted) return null;
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[var(--lightest-navy)] py-6 shadow-md z-500">
+    <nav className="fixed top-0 left-0 w-full  py-6 shadow-md z-500">
       <div className="container">
-        <div className="relative flex items-center ">
+        <div className="relative flex items-center gap-4">
           <ul className={`navigation `}>
             {pages.map(({ title, path }) => (
               <li key={path}>

@@ -41,10 +41,10 @@ export default function Pdf({ pages, setPages }) {
 
   return (
     <div className="">
-      <h2 className="text-2xl font-semibold">PDF → текст (DE → RU)</h2>
+      <h3 className="text-2xl font-semibold ">PDF → текст (DE → RU)</h3>
       <form
         onSubmit={handleSubmit}
-        className="flex items-center gap-4 border border-slate-800 rounded-lg p-4 bg-slate-900"
+        className="flex items-center gap-4 border border-slate-800 rounded-lg p-4 bg-slate-900 mt-2"
       >
         <input
           ref={fileInputRef}
@@ -53,7 +53,12 @@ export default function Pdf({ pages, setPages }) {
           accept="application/pdf"
           className="text-sm file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:bg-slate-700 file:text-slate-50 hover:file:bg-slate-600 transition-all duration-200  cursor-pointer"
         />
-        <button type="submit" disabled={loading} className="btn btn-emerald">
+        <button
+          type="submit"
+          disabled={loading}
+          className="btn btn-emerald  px-1 !text-[14px]
+          "
+        >
           {loading ? <Spinner /> : "Загрузить"}
         </button>
         <button
