@@ -20,6 +20,12 @@ export default function List() {
               isActive === item.name
                 ? "bg-[color-mix(in_srgb,var(--teal-400)_40%,transparent)] !text-[var(--teal-400)]"
                 : ""
+            } ${
+              item.marker === "einz"
+                ? "bg-[color-mix(in_srgb,var(--purple-500)_40%,transparent)] !text-[var(--purple-200)]"
+                : item.marker === "zwei"
+                  ? "bg-[color-mix(in_srgb,var(--lime-500)_40%,transparent)] !text-[var(--lime-200)]"
+                  : "bg-[color-mix(in_srgb,var(--rose-500)_40%,transparent)] !text-[var(--rose-200)]"
             }`}
             onClick={() => setisActive(item.name)}
           >
