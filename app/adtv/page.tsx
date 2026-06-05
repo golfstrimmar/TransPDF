@@ -13,15 +13,18 @@ export default function ADTF() {
   const [tieIem, settieIem] = useState<string>("");
 
   // Автоматически выбираем первый танец из списка на старте
-  useEffect(() => {
-    if (Tanzen && Tanzen.length > 0 && !tieIem) {
-      const firstDanceName = String(
-        Tanzen[0]["name" as keyof (typeof Tanzen)[0]],
-      );
-      settieIem(firstDanceName);
-    }
-  }, []);
-
+  // useEffect(() => {
+  //   if (Tanzen && Tanzen.length > 0 && !tieIem) {
+  //     const firstDanceName = String(
+  //       Tanzen[0]["name" as keyof (typeof Tanzen)[0]],
+  //     );
+  //     setTieIem("");
+  //   }
+  // }, []);
+  function formatContent(raw: string): string {
+    return raw.replace(/\s*\&\s*/g, "\n");
+  }
+  // ====>====>====>====>====>====>====>====>====>====>====>====>====>====>====>
   return (
     <section className="bg-[var(--slate)] w-[100vw] min-h-[100vh] pt-[60px] text-[var(--slate-300)]">
       <div className="container max-w-[1200px] mx-auto px-4">
@@ -98,8 +101,11 @@ export default function ADTF() {
                             <span className="text-[10px] text-teal-400/60 font-bold uppercase tracking-wider">
                               {key.replace(/_/g, " ")}
                             </span>
-                            <span className="text-lg text-slate-200">
-                              {String(item[key as keyof typeof item])}
+                            <span className="text-lg text-slate-200  whitespace-pre-line inline-block lh-1">
+                              {/*{String(item[key as keyof typeof item])}*/}
+                              {formatContent(
+                                String(item[key as keyof typeof item]),
+                              )}
                             </span>
                           </div>
                         ))}

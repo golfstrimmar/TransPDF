@@ -8,7 +8,7 @@ const Tanzen = [
     zahl: "L L S S",
     schlagwerte: "2 2 1 1",
     elemente: "Pandel seitwärts",
-    figuren: "Pendelschritt nach links und nach rechts , Grundschritt",
+    figuren: "Pendelschritt nach links und nach rechts & Grundschritt",
   },
   {
     name: "Foxtrott",
@@ -18,9 +18,9 @@ const Tanzen = [
     bpm: "168-208",
     zahl: "L L S S",
     schlagwerte: "2 2 1 1",
-    elemente: "Platzschritte, Wiegedrehungennach rechts und lins",
+    elemente: "Platzschritte &  Wiegedrehungen nach rechts und lins",
     figuren:
-      "Grundschritt am Platz, vorwärts und rückwärts , Wiege-Rechtsdrehung  , Wiege-Linksdrehung",
+      "Grundschritt am Platz, vorwärts und rückwärts & Wiege-Rechtsdrehung  & Wiege-Linksdrehung",
   },
   {
     name: "Langsamer Walzer",
@@ -32,7 +32,7 @@ const Tanzen = [
     schlagwerte: "1 1 1",
     elemente: "Geschlossene 3-Schritt-Folge",
     figuren:
-      "Rechtsdrehung am Platz, vorwärts und rückwärts, Linksdrehung am Platz, vorwärts und rückwärts",
+      "Rechtsdrehung am Platz, vorwärts und rückwärts &  Linksdrehung am Platz, vorwärts und rückwärts",
   },
   {
     name: "Wiener Walzer",
@@ -42,8 +42,9 @@ const Tanzen = [
     bpm: "135-180",
     zahl: "1 2 3",
     schlagwerte: "1 1 1",
-    elemente: "Pendel,Geschlossene 3-Schritt-Folge",
-    figuren: "Pendelschritt nach rechts, nach links, vorwärts und rückwärts , Swing-Out, alle Formen , Swing-In, alle Formen, Flirt,Pull & Push,Rechtsdrehung am Platz, vorwärts und rückwärts,Linksdrehung am Platz, vorwärts und rückwärts,Progressives Damensolo nach rechts",
+    elemente: "Pendel & Geschlossene 3-Schritt-Folge",
+    figuren:
+      "Pendelschritt nach rechts, nach links, vorwärts und rückwärts  &  Swing-Out, alle Formen  &  Swing-In, alle Formen &  Flirt & Pull and Push & Rechtsdrehung am Platz   vorwärts und rückwärts & Linksdrehung am Platz, vorwärts und rückwärts & Progressives Damensolo nach rechts",
   },
   {
     name: "Tango",
@@ -54,8 +55,8 @@ const Tanzen = [
     zahl: "L L bzw. S S L",
     schlagwerte: "1 1 bzw. 1/2 1/2 1 (2 2 bzw. 1 1 2)",
     elemente:
-      "Wiege rückwärts und vorwärts, Wiegedrehung rückwürts und vorwärts,Geschlossene 3 Schritt Folge. In Tango kann dieses Element als Abschlusschritt beyeichnet werden.",
-    figuren: "Gehschritte,Wiegeschritt,Link,Promenade",
+      "Wiege rückwärts und vorwärts &  Wiegedrehung rückwürts und vorwärts & Geschlossene 3 Schritt Folge &  In Tango kann dieses Element als Abschlusschritt bezeichnet werden.",
+    figuren: "Gehschritte & Wiegeschritt & Link & Promenade",
   },
   {
     name: "Tango-Argentino",
@@ -66,7 +67,7 @@ const Tanzen = [
     zahl: "L bzw. S S",
     schlagwerte: "1 bzw. 1/2 1/2 (2 bzw. 1 1 )",
     elemente: "",
-    figuren: "Paso Básico,Variationen zum Paso Básico",
+    figuren: "Paso Básico & Variationen zum Paso Básico",
   },
 
   {
@@ -77,8 +78,10 @@ const Tanzen = [
     bpm: "100-144",
     zahl: "1 2 Tap oder S S S",
     schlagwerte: "1 1 1",
-    elemente: "Gedrehter Schritt,Platzschritte,Tap,2-Schritt-Drehung",
-    figuren: "",
+    elemente:
+      "Gedrehter Schritt & Platzschritte & Tap- Der Tap kann abhängig von der Richtung, in die er gesetzt wird, auf dem Ballen, flach oder auf der Ferze getanzt werden. & 2-Schritt-Drehung",
+    figuren:
+      "Grundschritt am Platz, vorwärts, rückwärts & Swing-Out, alle Formen & Trennung & Swing-In, alle Formen & Link & Pull and Push &   Rechtsdrehung &   Progressives Damensolo nach rechts & Platzwechsel mit Damensolo nach rechts &  Progressives Damensolo nach links & Platzwechsel mit Damensolo nach links",
   },
   {
     name: "Boogie Woogie",
@@ -88,8 +91,9 @@ const Tanzen = [
     bpm: "136-200",
     zahl: "S S L L oder 1 2 3 4 5 6 ",
     schlagwerte: "1 1 2 2, 1 1 1 1 1 1",
-    elemente: "Wiege rw,Tap,2-Schritt-Drehung ",
-    figuren: "",
+    elemente: "Wiege rw&Tap&2-Schritt-Drehung ",
+    figuren:
+      "4er-Grundschritt& 6er-Grundschritt& Swing-Out, alle Formen& Swing-In, alle Formen& Flirt& Progressives Damensolo nach rechts& Progressives Damensolo nach links",
   },
   {
     name: "Rock`n`Roll",
@@ -99,8 +103,8 @@ const Tanzen = [
     bpm: "160-192",
     zahl: "S S S S S S oder 1 2 3 4 5 6",
     schlagwerte: "1 1 1 1 1 1",
-    elemente: "Wiege rw,Kick (Flick),Spin",
-    figuren: "",
+    elemente: "Wiege rw&Kick (Flick)&Spin",
+    figuren: "6er-Grundschritt&Damen-Swing-In& Damen-Swing-Out",
   },
   {
     name: "Jive",
@@ -110,8 +114,9 @@ const Tanzen = [
     bpm: "128-176",
     zahl: "1 2 3e 4 1e 2,S S Se S Se S",
     schlagwerte: "1 1 3/4 1/4 1 3/4 1/4 1",
-    elemente: "Wiege rw, 3-Schritt-Chasse",
-    figuren: "",
+    elemente: "Wiege rw& 3-Schritt-Chasse",
+    figuren:
+      "Gruhdschitt&Swing-Out, alle Formen&Swing-In, alle Formen&Link&Flirt&Progressives Damensolo nach rechts&Progressives Damensolo nach links",
   },
   {
     name: "Merengue",
@@ -121,8 +126,10 @@ const Tanzen = [
     bpm: "112-128",
     zahl: "1 2",
     schlagwerte: "1 1",
-    elemente: "Platzschritte,2-Schritt-Chasse,Latin Hip (auch Merengue Hip oder Opposite Hip genannt)",
-    figuren: "",
+    elemente:
+      "Platzschritte& 2-Schritt-Chasse& Latin Hip (auch Merengue Hip oder Opposite Hip genannt)",
+    figuren:
+      "Grundschritt am Platz, vorwärts und rückwärts& Chasse nach links und nach rechts& Stationäre Solodrehungen nach rechts und nach links",
   },
   {
     name: "Salsa",
@@ -132,8 +139,9 @@ const Tanzen = [
     bpm: "176-208",
     zahl: "S S L",
     schlagwerte: "1 1 2",
-    elemente: "Wiege vw rw , Platzdrehung",
-    figuren: "",
+    elemente: "Wiege vw rw & Platzdrehung",
+    figuren:
+      "Grundschritt New York Style&   Grundschritt Cuban Style&  Stationäres Damensolo nach rechts vorwärts&  Stationäres Damensolo nach rechts seitwärts&  Wischer nach rechts und nach links&  Cross Body Lead",
   },
   {
     name: "Rumba",
@@ -143,8 +151,9 @@ const Tanzen = [
     bpm: "96-120",
     zahl: "L S S",
     schlagwerte: "2 1 1",
-    elemente: "Platzschritte, Wiege vw rw ,Platzdrehung,Gedrehter Schritt",
-    figuren: "",
+    elemente: "Platzschritte&  Wiege vw rw & Platzdrehung& Gedrehter Schritt",
+    figuren:
+      "Grundschritt am Platz, vorwärts und rückwärts& Stationäres Damensolo nach rechts& Promenade nach rechts und nach links& Wischer nach rechts und nach links& Hand zu Hand nach rechts und nach links& Platzdrehung nach rechts und nach links& Stationäres Damensolo nach links& Schulter zu Schulter nach rechts und nach links",
   },
   {
     name: "Karree-Rumba",
@@ -154,8 +163,9 @@ const Tanzen = [
     bpm: "104-128",
     zahl: "L S S",
     schlagwerte: "2 1 1",
-    elemente: "Geschlossene 3-Schritt-Folge, Kreiseldrehung",
-    figuren: "",
+    elemente: "Geschlossene 3-Schritt-Folge& Kreiseldrehung",
+    figuren:
+      "Rechtskarree vorwärts und rückwärts &Linkskarree vorwärts und rückwärts &Trennung &Link &Stationäres Damensolo nach rechts",
   },
   {
     name: "Cha Cha Cha",
@@ -165,8 +175,9 @@ const Tanzen = [
     bpm: "112-136",
     zahl: "1 2 3 4+1 oder 2 3 4+1",
     schlagwerte: "1 1 1 1/2 1/2 1 , 1 1 1/2 1/2 1",
-    elemente: "Platzschritte,3-Schritt-Chasse,Wiege vw rw, Platzdrehung",
-    figuren: "",
+    elemente: "Platzschritte & 3-Schritt-Chasse & Wiege vw rw &  Platzdrehung",
+    figuren:
+      "Grundschritt am Platz, vorwärts und rückwärts  & Stationäres Damensolo nach rechts & Promenade nach rechts und nach links & Wischer nach rechts und nach links  & Hand zu Hand nach rechts und nach links & Platzdrehung nach rechts und nach links & Stationäres Damensolo nach links & Schulter zu Schulter nach rechts und nach links",
   },
   {
     name: "Disco-Samba",
@@ -177,7 +188,8 @@ const Tanzen = [
     zahl: "seit Tap sit Tap oder S S S S (L L L L)",
     schlagwerte: "1 1 1 1",
     elemente: "Tap",
-    figuren: "",
+    figuren:
+      "Seitschritt nach rechts und nach links &  Rechtsgrundschritt vorwärts und rückwärts  &  Linksgrundschritt vorwärts und rückwärts &  Swing-Out, alle Formen &  Trennung &  Swing-In, alle Formen &  Link &  Flirt &  Pull and Push &  Wischer nach rechts und nach links &  Langsames stationäres Damensolo nach rechts und nach links ",
   },
   {
     name: "Samba",
@@ -187,8 +199,10 @@ const Tanzen = [
     bpm: "100-120",
     zahl: "1e 2",
     schlagwerte: "3/4 1/4 1",
-    elemente: "Platzschritte, Latein-Kreuz (in der Salsa auch Hook genannt),Fußrutschen,Platzvolta,Ball Change",
-    figuren: "",
+    elemente:
+      "Platzschritte, Latein-Kreuz (in der Salsa auch Hook genannt),Fußrutschen,Platzvolta,Ball Change",
+    figuren:
+      "Seitschritt nach rechts und nach links &   Rechtsgrundschritt vorwärts und rückwärts &   Linksgrundschritt vorwärts und rückwärts &   Swing-Out, alle Formen &   Trennung &   Swing-In, alle Formen &   Link &   Flirt &   Pull and Push &   Wischer nach rechts und nach links &   Promenade mit dem linken und dem rechten Fuß &   Langsames stationäres Damensolo nach rechts und nach links &   Stationäres Damensolo nach rechts",
   },
   {
     name: "Slowfoxtrott",
@@ -202,7 +216,7 @@ const Tanzen = [
     figuren: "",
   },
   {
-    name: "Passo Doble (internationaler und französischer Stil)",
+    name: "Passo Doble ( französischer Stil)",
     musikrichtung: "Latino",
     takt: "2/4",
     temp: "60-64",
@@ -210,7 +224,19 @@ const Tanzen = [
     zahl: "1 2",
     schlagwerte: "1 1",
     elemente: "2-Schritt-Chasse,2-Schritt-Drehung,Wiege,Appell",
-    figuren: "",
+    figuren: "Grundschritt &  Promenade &  Linksdrehung &  Сара",
+  },
+  {
+    name: "Passo Doble (internationaler)",
+    musikrichtung: "Latino",
+    takt: "2/4",
+    temp: "60-64",
+    bpm: "120-128",
+    zahl: "1 2",
+    schlagwerte: "1 1",
+    elemente: "2-Schritt-Chasse,2-Schritt-Drehung,Wiege,Appell",
+    figuren:
+      "Grundschritt am Platz, vorwärts und rückwärts &  Chasse nach rechts &   Chasse nach links &   Chasse &   Attacke &   Promenadenlink &   Trennung",
   },
   {
     name: "Quickstep",
