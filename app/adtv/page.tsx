@@ -27,9 +27,9 @@ export default function ADTF() {
   // ====>====>====>====>====>====>====>====>====>====>====>====>====>====>====>
   return (
     <section className="bg-[var(--slate)] w-[100vw] min-h-[100vh] pt-[60px] text-[var(--slate-300)]">
-      <div className="container max-w-[1200px] mx-auto px-4">
+      <div className="container  mx-auto px-1">
         {/* Шапка со счетчиками */}
-        <div className="flex gap-2 items-center mb-6">
+        {/*<div className="flex gap-2 items-center mb-6">
           <h4 className="text-2xl font-bold text-green-500">{countR}</h4>
           <h4 className="text-2xl font-bold text-red-500">{countF}</h4>
           <button
@@ -41,7 +41,7 @@ export default function ADTF() {
           >
             <ClearIcon width={14} height={14} />
           </button>
-        </div>
+        </div>*/}
 
         {/* Таб-сетка: левая колонка кнопок (250px), правая — контент (1fr) */}
         <div className="grid grid-cols-[250px_1fr] gap-1 items-start">
@@ -53,7 +53,7 @@ export default function ADTF() {
               return (
                 <button
                   key={index}
-                  className={`btn text-left justify-start !py-1 px-4 rounded-xl border text-sm transition-all duration-200 cursor-pointer ${
+                  className={`btn text-left justify-start !py-1 px-4 rounded-xl border !text-lg transition-all duration-200 cursor-pointer ${
                     isActive
                       ? "bg-[color-mix(in_srgb,var(--teal-400)_30%,transparent)] !text-[var(--teal-400)] border-teal-500/50 font-bold"
                       : "bg-[#1e293b]/40 border-slate-800 text-slate-300 hover:bg-[#1e293b]/70 hover:border-slate-700"

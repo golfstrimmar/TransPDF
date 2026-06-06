@@ -111,93 +111,93 @@ export const ElementeMitEinemSchrit = [
   {
     name: "2-Schritt-Chasse",
     content:
-      "&Merenque, Paso Doble&• Ein Seitschritt und ein Heranschließen des anderen Fußes.&Die Fußarbeit ist Ballen flach oder Ballen.&In den Tabellen im Spezifischen Teil wird das Element nur als Chasse bezeichnet.",
+      "&Merenque, Paso Doble&• Ein Seitschritt und ein Heranschließen des anderen Fußes.&Die Fußarbeit ist Ballen flach oder Ballen.&In den Tabellen im Spezifischen Teil wird das Element nur als Chasse bezeichnet.&• Шаг в сторону и захват другой ноги.& Работа ног плоская или бугристая.&В таблицах в конкретной части элемент упоминается только как chasse.",
     marker: "zwei",
   },
   {
     name: "2-Schritt-Drehung",
     content:
-      "&Discofox, Boogie Woogie, Cha Cha Cha, Paso Doble (franz. Stil)&• Eine über zwei Schritte aufgeteilte Drehung in die gleiche Richtung. Sie kann beim ersten Schritt mit einer Einwärts-&oder einer Auswärtsdrehung beginnen.&• Bei einer 2-Schritt-Drehung einwärts beginnt die Bewegung mit einem gedrehten Schritt und ist seitwärts-rückwärts.&• Bei einer 2-Schritt-Drehung auswärts endet die Bewegung mit einem gedrehten Schritt und ist vorwärts-rückwärts.&• Drehung: min 3/8, max 1¼",
+      "&Discofox, Boogie Woogie, Cha Cha Cha, Paso Doble (franz. Stil)&• Eine über zwei Schritte aufgeteilte Drehung in die gleiche Richtung. Sie kann beim ersten Schritt mit einer Einwärts-&oder einer Auswärtsdrehung beginnen.&• Bei einer 2-Schritt-Drehung einwärts beginnt die Bewegung mit einem gedrehten Schritt und ist seitwärts-rückwärts.&• Bei einer 2-Schritt-Drehung auswärts endet die Bewegung mit einem gedrehten Schritt und ist vorwärts-rückwärts.&• Drehung: min 3/8, max 1¼&• Поворот в одном направлении, разделенный на два шага. Она может начинаться с первого шага с разворота внутрь и наружу.&• При 2-ступенчатом повороте внутрь движение начинается с разворота и идет вбок-назад.&• При 2-ступенчатом повороте за пределы поля движение завершается одним вращательным шагом и выполняется вперед-назад.&• Вращение: мин 3/8, макс. 1 ‰",
     marker: "zwei",
   },
   {
     name: "Ball Change",
     content:
-      "&Discofox, Jive, Samba&• Ein Schritt mit Teilgewicht und eine Gewichtsübertragung am Platz.&• Die spezifischen Ausführungen und Variationen sind in den einzelnen Tänzen beschrieben.",
+      "&Discofox, Jive, Samba&• Ein Schritt mit Teilgewicht und eine Gewichtsübertragung am Platz.&• Die spezifischen Ausführungen und Variationen sind in den einzelnen Tänzen beschrieben.&• Один шаг с частичным весом и перенос веса на месте.&• Конкретные исполнения и вариации описаны в отдельных танцах.",
     marker: "zwei",
   },
   {
     name: "El Ocho (die Acht)",
     content:
-      " &Tango Argentino&• Die vollständige Acht besteht aus zwei Vorwärts- bzw. Rückwärtsschritten mit folgender Drehung, jeweils in die&andere Richtung.&a) Adelante (vorwärts):&Gekurvte Vorwärtsschritte mit folgender Auswärtsdrehung von Hüfte und Standbeinfuß, der Oberkörper&dreht weniger. Während der Drehung werden Knie und Fußknöchel eng aneinander vorbei geführt.&Gekurvte Rückwärtsschritte mit folgender Einwärtsdrehung von Hüfte und Standbeinfuß, der Oberkörper&dreht weniger. Während der Drehung werden Knie und Fußknöchel eng aneinander vorbei geführt.",
+      " &Tango Argentino&• Die vollständige Acht besteht aus zwei Vorwärts- bzw. Rückwärtsschritten mit folgender Drehung, jeweils in die&andere Richtung.&a) Adelante (vorwärts):&Gekurvte Vorwärtsschritte mit folgender Auswärtsdrehung von Hüfte und Standbeinfuß, der Oberkörper&dreht weniger. Während der Drehung werden Knie und Fußknöchel eng aneinander vorbei geführt.&Gekurvte Rückwärtsschritte mit folgender Einwärtsdrehung von Hüfte und Standbeinfuß, der Oberkörper&dreht weniger. Während der Drehung werden Knie und Fußknöchel eng aneinander vorbei geführt.&• Полная восьмерка состоит из двух прямых и четырех прямых соответственно. Шаги в обратном направлении со следующим поворотом, каждый в свою сторону.&a) Аделанте (вперед):& Изогнутые движения вперед с последующим поворотом бедра и стоящей ноги в сторону, туловище&меньше поворачивается. Во время вращения колено и лодыжка проходят близко друг к другу.& Изогнутые шаги назад с последующим поворотом бедра и стоящей ноги внутрь, туловище&меньше поворачивается. Во время вращения колено и лодыжка проходят близко друг к другу.",
     marker: "zwei",
   },
   {
     name: " Fersendrehung",
     content:
-      "&Quickstep, Slowfoxtrott, Langsamer Walzer&• Ein Rückwärtsschritt (Ballen flach), eine Einwärtsdrehung auf der Ferse dieses Schrittes bei flachem Fuß,&während der andere Fuß auf der Ferse zurückgezogen, dann herangeschlossen wird und anschließend das&Gewicht übernimmt (Ferse Ballen).&• Die Drehung kann auf dem Ballen des geschlossenen Fußes fortgesetzt werden.&• Drehung: min 1/4, max 1/2",
+      "&Quickstep, Slowfoxtrott, Langsamer Walzer&• Ein Rückwärtsschritt (Ballen flach), eine Einwärtsdrehung auf der Ferse dieses Schrittes bei flachem Fuß,&während der andere Fuß auf der Ferse zurückgezogen, dann herangeschlossen wird und anschließend das&Gewicht übernimmt (Ferse Ballen).&• Die Drehung kann auf dem Ballen des geschlossenen Fußes fortgesetzt werden.&• Drehung: min 1/4, max 1/2&• Шаг назад (сгибание стопы), поворот внутрь пятки на этом шаге, когда ступня плоская, и в то время как другая нога отведена назад на пятке, затем подтягивается и затем принимает на себя вес (сгибание пятки).&• Вращение можно продолжить на подушечке закрытой стопы.&• Вращение: мин 1/4, макс 1/2",
     marker: "zwei",
   },
   {
     name: "Kreiseldrehung",
     content:
-      "&Quickstep, Social Slow, Langsamer Walzer&• Ein Vorwärtsschritt, eine Auswärtsdrehung auf dem Ballen oberhalb der Grundebene (Ferse Ballen) und ein&Seitwärtsschritt mit Absenken (Ballen Ferse).&• Drehung: min 1/4, max 3/8",
+      "&Quickstep, Social Slow, Langsamer Walzer&• Ein Vorwärtsschritt, eine Auswärtsdrehung auf dem Ballen oberhalb der Grundebene (Ferse Ballen) und ein&Seitwärtsschritt mit Absenken (Ballen Ferse).&• Drehung: min 1/4, max 3/8&• Один шаг вперед, один поворот в сторону на тюке выше базовой плоскости (пяточный тюк) и один&боковой шаг с опусканием (пяточный тюк).&• Вращение: мин 1/4, макс. 3/8",
     marker: "zwei",
   },
   {
     name: " Pendel",
     content:
-      "&Blues, Wiener Walzer&• Ein Schritt in eine beliebige Richtung und ein anschließendes unbelastetes Heranführen des freien Fußes.&• Das Pendel kann ohne oder mit leichter Drehung getanzt werden.",
+      "&Blues, Wiener Walzer&• Ein Schritt in eine beliebige Richtung und ein anschließendes unbelastetes Heranführen des freien Fußes.&• Das Pendel kann ohne oder mit leichter Drehung getanzt werden.&• Один шаг в любом направлении и последующее движение свободной ногой без нагрузки.&• Маятник можно раскачивать без или с легким вращением.",
     marker: "zwei",
   },
 
   {
     name: "Platzdrehung",
     content:
-      "&Salsa, Rumba, Cha Cha Cha&• Ein Gedrehter Schritt und eine Gewichtsübertragung am Platz, bei der weitergedreht werden kann.&• Drehung: min 3/8, max 1/2 (auf dem ersten Schritt)",
+      "&Salsa, Rumba, Cha Cha Cha&• Ein Gedrehter Schritt und eine Gewichtsübertragung am Platz, bei der weitergedreht werden kann.&• Drehung: min 3/8, max 1/2 (auf dem ersten Schritt)&• Поворотный шаг и перенос веса на месте, при котором можно продолжать вращение.&• Вращение: минимум 3/8, максимум 1/2 (на первом шаге)",
     marker: "zwei",
   },
   {
     name: "Wiege",
     content:
-      "&Quickstep, Langsamer Walzer, Tango, Tango Argentino, Boogie Woogie, Jive, Rock'n'Roll, Salsa, Rumba,&Cha Cha Cha, Paso Doble (franz. Stil)&• Ein Schritt in eine beliebige Richtung und die anschließende Gewichtsübertragung am Platz auf den&anderen Fuß.&• Eventuelle spezifische Ausführungen sind in den einzelnen Tänzen beschrieben.&Jive, Rumba, Cha Cha Cha&Beim Vorwärtsschritt wird das Gewicht nicht vollständig übertragen und die Fußspitze leicht auswärts&gedreht.",
+      "&Quickstep, Langsamer Walzer, Tango, Tango Argentino, Boogie Woogie, Jive, Rock'n'Roll, Salsa, Rumba,&Cha Cha Cha, Paso Doble (franz. Stil)&• Ein Schritt in eine beliebige Richtung und die anschließende Gewichtsübertragung am Platz auf den&anderen Fuß.&• Eventuelle spezifische Ausführungen sind in den einzelnen Tänzen beschrieben.&Jive, Rumba, Cha Cha Cha&Beim Vorwärtsschritt wird das Gewicht nicht vollständig übertragen und die Fußspitze leicht auswärts&gedreht.&• Один шаг в любом направлении и последующий перенос веса с места на другую ногу.&• Возможные конкретные исполнения описаны в отдельных танцах.И джайв, румба, ча-ча-ча, и шаг вперед не переносит вес полностью, а кончик стопы слегка отклоняется и поворачивается.",
     marker: "zwei",
   },
   {
     name: " Wiegedrehung",
     content:
-      " &•&Foxtrott, Tango&nach rechts:&• Der Herr tanzt mit dem linken Fuß einen rückwärts bis seitwärts angesetzten Schritt und eine Gewichts-&übertragung am Platz oder einen Vorwärtsschritt zwischen ihre Füße.&• Die Dame tanzt mit dem rechten Fuß einen Vorwärtsschritt zwischen seine Füße und einen seitwärts&bis rückwärts angesetzten Schritt um den rechten Fuß des Herrn herum.&• Drehung: min 1/8, max 1/2&nach links:&• Der Herr tanzt einen Vorwärtsschritt mit dem linken Fuß, der auf der äußeren Spur neben ihrem rechten&Fuß endet und danach einen Rückwärtsschritt mit dem rechten Fuß.&• Die Dame tanzt einen Rückwärtsschritt mit dem rechten Fuß und einen Vorwärtsschritt mit dem linken&Fuß, der auf der äußeren Spur neben seinem rechten Fuß endet.&Beide Schritte werden schmalspurig ausgeführt.&•&Drehung: min 1/8, max 1/2",
+      " &•&Foxtrott, Tango&nach rechts:&• Der Herr tanzt mit dem linken Fuß einen rückwärts bis seitwärts angesetzten Schritt und eine Gewichts-&übertragung am Platz oder einen Vorwärtsschritt zwischen ihre Füße.&• Die Dame tanzt mit dem rechten Fuß einen Vorwärtsschritt zwischen seine Füße und einen seitwärts&bis rückwärts angesetzten Schritt um den rechten Fuß des Herrn herum.&• Drehung: min 1/8, max 1/2&nach links:&• Der Herr tanzt einen Vorwärtsschritt mit dem linken Fuß, der auf der äußeren Spur neben ihrem rechten&Fuß endet und danach einen Rückwärtsschritt mit dem rechten Fuß.&• Die Dame tanzt einen Rückwärtsschritt mit dem rechten Fuß und einen Vorwärtsschritt mit dem linken&Fuß, der auf der äußeren Spur neben seinem rechten Fuß endet.&Beide Schritte werden schmalspurig ausgeführt.&•&Drehung: min 1/8, max 1/2&вправо:&• Джентльмен танцует левой ногой, делая шаг назад и в сторону, а также перенося вес и вес на корт или делая шаг вперед между вашими ногами.&• Дама танцует правой ногой шаг вперед между его ступнями и шаг в сторону и назад вокруг правой ноги джентльмена.&• Поворот: минимум 1/8, максимум 1/2ивлево:&• Джентльмен танцует шаг вперед левой ногой, который заканчивается на внешней дорожке рядом с вашей правой ногой, а затем делает шаг назад правой ногой.&• Дама танцует шаг назад правой ногой и шаг вперед левой ногой, который заканчивается на внешней дорожке рядом с ее правой ногой.&Оба шага выполняются по узкоколейке.&•&Вращение: мин 1/8, макс. 1/2",
     marker: "zwei",
   },
 
   {
     name: "3-Schritt-Chasse",
     content:
-      "&Quickstep, Slowfoxtrott, Langsamer Walzer, Jive, Cha Cha Cha&Eine Folge von drei Schritten, in der der zweite Schritt fast oder ganz herangeschlossen wird.&• Ein 3-Schritt-Chasse kann am Platz oder in jede Richtung getanzt oder nach rechts und links gedreht werden.&• In den Tabellen im Spezifischen Teil wird das Element nur als Chasse bezeichnet.",
+      "&Quickstep, Slowfoxtrott, Langsamer Walzer, Jive, Cha Cha Cha&Eine Folge von drei Schritten, in der der zweite Schritt fast oder ganz herangeschlossen wird.&• Ein 3-Schritt-Chasse kann am Platz oder in jede Richtung getanzt oder nach rechts und links gedreht werden.&• In den Tabellen im Spezifischen Teil wird das Element nur als Chasse bezeichnet.&И последовательность из трех шагов, в которой второй шаг почти или полностью завершается.&• 3-ступенчатую шассу можно танцевать на корте или в любом направлении, а также поворачивать вправо и влево.&• В таблицах в конкретной части элемент обозначается только как Chasse.",
     marker: "drei",
   },
   {
     name: "3-Schritt-Drehung",
     content:
-      "&Foxtrott, Salsa, Rumba, Samba&• Eine über drei Schritte aufgeteilte Drehung in die gleiche Richtung.&Sie kann beim ersten Schritt mit einer Einwärts- oder einer Auswärtsdrehung beginnen.&• Drehung: min 3/4, max 1½",
+      "&Foxtrott, Salsa, Rumba, Samba&• Eine über drei Schritte aufgeteilte Drehung in die gleiche Richtung.&Sie kann beim ersten Schritt mit einer Einwärts- oder einer Auswärtsdrehung beginnen.&• Drehung: min 3/4, max 1½&• Поворот в одном направлении, разделенный на три шага.&Она может начать с первого шага с разворота внутрь или в сторону.&• Вращение: мин 3/4, макс. 1½",
     marker: "drei",
   },
   {
     name: "3-Schritt-Folgen:",
     content:
-      "&Bei allen 3-Schritt-Folgen ist der erste Schritt ein Vor- bzw. Rückwärtsschritt und der zweite ein Seitwärtsschritt.&Abhängig vom dritten Schritt wird in folgende Formen unterschieden:",
+      "&Bei allen 3-Schritt-Folgen ist der erste Schritt ein Vor- bzw. Rückwärtsschritt und der zweite ein Seitwärtsschritt.&Abhängig vom dritten Schritt wird in folgende Formen unterschieden:&Для всех 3-ступенчатых эпизодов первый шаг - это предварительный или предварительный этап, соответственно. Шаг назад, а второй - шаг в сторону.&В зависимости от третьего шага различают следующие формы:",
     marker: "drei",
   },
   {
     name: "Geschlossene 3-Schritt-Folge",
     content:
-      "&Foxtrott, Quickstep. Social Slow, Langsamer Walzer, Wiener Walzer, Tango. Karree-Rumba, Samba&• Der dritte Schritt ist ein Fußschließen.&• In Rechtsdrehungen kann der Rückwärtsschritt mit dem linken Fuß je nach Drehungsumfang rückwärts bis diago-&nal rückwärts angesetzt werden.&• Drehung: min 0, max 1/2",
+      "&Foxtrott, Quickstep. Social Slow, Langsamer Walzer, Wiener Walzer, Tango. Karree-Rumba, Samba&• Der dritte Schritt ist ein Fußschließen.&• In Rechtsdrehungen kann der Rückwärtsschritt mit dem linken Fuß je nach Drehungsumfang rückwärts bis diago-&nal rückwärts angesetzt werden.&• Drehung: min 0, max 1/2&• Третий шаг - закрытие ступни.&• В поворотах вправо шаг назад левой ногой может быть выполнен в обратном направлении или по диагонали и в конечном итоге в обратном направлении, в зависимости от амплитуды вращения.&• Вращение: мин 0, макс. 1/2",
     marker: "drei",
   },
   {
     name: "Offene 3-Schritt-Folge",
     content:
-      "&Quickstep, Slowfoxtrott, Langsamer Walzer, Paso Doble (internationaler Stil)&• Drehung: min 0, max 3/4",
+      "&Quickstep, Slowfoxtrott, Langsamer Walzer, Paso Doble (internationaler Stil)&Der dritte Schritt wird nicht geschlossen.&• Drehung: min 0, max 3/4",
     marker: "drei",
   },
   {

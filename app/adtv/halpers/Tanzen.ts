@@ -200,7 +200,7 @@ const Tanzen = [
     zahl: "1e 2",
     schlagwerte: "3/4 1/4 1",
     elemente:
-      "Platzschritte, Latein-Kreuz (in der Salsa auch Hook genannt),Fußrutschen,Platzvolta,Ball Change",
+      "Platzschritte& Latein-Kreuz (in der Salsa auch Hook genannt)&Fußrutschen&Platzvolta&Ball Change",
     figuren:
       "Seitschritt nach rechts und nach links &   Rechtsgrundschritt vorwärts und rückwärts &   Linksgrundschritt vorwärts und rückwärts &   Swing-Out, alle Formen &   Trennung &   Swing-In, alle Formen &   Link &   Flirt &   Pull and Push &   Wischer nach rechts und nach links &   Promenade mit dem linken und dem rechten Fuß &   Langsames stationäres Damensolo nach rechts und nach links &   Stationäres Damensolo nach rechts",
   },
@@ -223,7 +223,7 @@ const Tanzen = [
     bpm: "120-128",
     zahl: "1 2",
     schlagwerte: "1 1",
-    elemente: "2-Schritt-Chasse,2-Schritt-Drehung,Wiege,Appell",
+    elemente: "2-Schritt-Chasse&2-Schritt-Drehung&Wiege&Appell",
     figuren: "Grundschritt &  Promenade &  Linksdrehung &  Сара",
   },
   {
@@ -234,7 +234,7 @@ const Tanzen = [
     bpm: "120-128",
     zahl: "1 2",
     schlagwerte: "1 1",
-    elemente: "2-Schritt-Chasse,2-Schritt-Drehung,Wiege,Appell",
+    elemente: "2-Schritt-Chasse&2-Schritt-Drehung&Wiege&Appell",
     figuren:
       "Grundschritt am Platz, vorwärts und rückwärts &  Chasse nach rechts &   Chasse nach links &   Chasse &   Attacke &   Promenadenlink &   Trennung",
   },

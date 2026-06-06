@@ -16,7 +16,7 @@ export default function List() {
         {ElementeMitEinemSchrit.map((item) => (
           <button
             key={item.name}
-            className={`btn btn-empty ${
+            className={`btn btn-empty  !py-1 ${
               isActive === item.name
                 ? "bg-[color-mix(in_srgb,var(--teal-400)_40%,transparent)] !text-[var(--teal-400)]"
                 : ""
@@ -27,7 +27,10 @@ export default function List() {
                   ? "bg-[color-mix(in_srgb,var(--lime-500)_40%,transparent)] !text-[var(--lime-200)]"
                   : "bg-[color-mix(in_srgb,var(--rose-500)_40%,transparent)] !text-[var(--rose-200)]"
             }`}
-            onClick={() => setisActive(item.name)}
+            onClick={() => {
+              setisActive(item.name);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             {item.name}
           </button>
@@ -45,7 +48,7 @@ export default function List() {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.2 }}
-                  className="text-[20px] whitespace-pre-line"
+                  className="text-[18px] whitespace-pre-line"
                 >
                   {formatContent(item.content)}
                 </motion.p>

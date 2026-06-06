@@ -1,8 +1,7 @@
 .header {
-    position: relative;
     border-bottom: 1px var(--slate-800) solid;
-    padding: 30px 0;
-    background: var(--navy-950);
+    padding: 15px 0;
+    background: var(--navy-900);
 }
 
 .logoContainer {
@@ -47,7 +46,8 @@
     display: flex;
     gap: 30px;
     align-items: center;
-
+    padding: 0 25px;
+    border-radius: 5px;
     li a {
         white-space: nowrap;
     }
