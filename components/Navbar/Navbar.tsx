@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   //------------------
   const pages = [
     { title: "Home", path: "/" },
-    { title: "ADTV", path: "/adtv" },
+    { title: "Tänzen", path: "/adtv" },
     { title: "Elemente", path: "/elemente" },
     { title: "Iso", path: "/iso" },
   ];
