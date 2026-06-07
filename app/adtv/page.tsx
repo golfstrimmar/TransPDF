@@ -1,12 +1,20 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import TanzenDef from "./halpers/Tanzen";
+// import TanzenDef from "./halpers/Tanzen";
 import { AnimatePresence, motion } from "framer-motion";
 
-const Tanzen = TanzenDef.Tanzen;
+// const Tanzen = TanzenDef.Tanzen;
+type Tanz = {
+  name: string;
+  [key: string]: string;
+};
 
+// ====>====>====>====>====>====>====>====>====>====>====>====>====>====>====>
 export default function ADTF() {
   const [tieIem, settieIem] = useState<string>("Blues");
+  const [tanzen, setTanzen] = useState<Tanz[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   function formatContent(raw: string): string {
     return raw.replace(/\s*\&\s*/g, "\n");
@@ -18,12 +26,44 @@ export default function ADTF() {
       const detailsElement = document.getElementById("details-panel");
       if (detailsElement) {
         setTimeout(() => {
-          detailsElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          detailsElement.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+          });
         }, 100);
       }
     }
   }, [tieIem]);
 
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadTanzen() {
+      try {
+        const res = await fetch("/data/tanzen.json");
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data: Tanz[] = await res.json();
+        if (!cancelled) {
+          setTanzen(data);
+          // если текущий tieIem не валиден, можно сразу выбрать первый
+          if (!data.find((t) => t.name === tieIem) && data.length > 0) {
+            settieIem(data[0].name);
+          }
+        }
+      } catch (e: any) {
+        if (!cancelled) setError(e.message ?? "Fehler beim Laden");
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+
+    loadTanzen();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // ====>====>====>====>====>====>====>====>====>====>====>====>====>====>====>
   return (
     <section className="bg-[var(--slate)] w-[100vw] min-h-[100vh] pt-[100px] pb-12 text-[var(--slate-300)] overflow-x-hidden">
       <div className="container mx-auto px-4">
@@ -34,11 +74,10 @@ export default function ADTF() {
 
         {/* Tab-grid: left column (desktop sidebar) / top scroll (mobile), right column (details) */}
         <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-6 items-start">
-          
           {/* MOBILE VIEW: Horizontal scrollable navigation */}
           <div className="md:hidden w-full overflow-hidden mb-2">
             <div className="flex gap-2 overflow-x-auto pb-3 scrollbar-none scrollbar-thin scrollbar-thumb-slate-800">
-              {Tanzen.map((item, index) => {
+              {tanzen.map((item, index) => {
                 const name = String(item["name" as keyof typeof item]);
                 const isActive = tieIem === name;
                 return (
@@ -60,7 +99,7 @@ export default function ADTF() {
 
           {/* DESKTOP VIEW: Sidebar navigation */}
           <div className="hidden md:flex flex-col gap-1.5 max-h-[75vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-transparent">
-            {Tanzen.map((item, index) => {
+            {tanzen.map((item, index) => {
               const name = String(item["name" as keyof typeof item]);
               const isActive = tieIem === name;
               return (
@@ -78,6 +117,17 @@ export default function ADTF() {
               );
             })}
           </div>
+          {loading && (
+            <div className="flex items-center justify-center flex-grow text-slate-500 text-sm md:text-base italic py-12">
+              Loading the list of dances...
+            </div>
+          )}
+
+          {error && (
+            <div className="flex items-center justify-center flex-grow text-red-400 text-sm md:text-base italic py-12">
+              Loading error: {error}
+            </div>
+          )}
 
           {/* DETAIL PANEL: Displays chosen dance properties */}
           <div
@@ -86,7 +136,7 @@ export default function ADTF() {
           >
             <AnimatePresence initial={false} mode="wait">
               {tieIem ? (
-                Tanzen.map((item) => {
+                tanzen.map((item) => {
                   const name = String(item["name" as keyof typeof item]);
                   const isActive = tieIem === name;
 

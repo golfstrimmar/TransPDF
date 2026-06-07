@@ -1,12 +1,19 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { ElementeMitEinemSchrit } from "@/app/elemente/helpers/el";
 import { AnimatePresence, motion } from "framer-motion";
+type Element = {
+  name: string;
+  [key: string]: string;
+};
 
 export default function List() {
-  const [isActive, setisActive] = useState<string>("Achsendrehung (paarweise getanzt)");
+  const [isActive, setisActive] = useState<string>(
+    "Achsendrehung (paarweise getanzt)",
+  );
   const [selectedMobileArea, setSelectedMobileArea] = useState<string>("einz");
-
+  const [elements, setelements] = useState<Element[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   function formatContent(raw: string): string {
     return raw.replace(/\s*\&\s*/g, "\n\n");
   }
@@ -17,11 +24,42 @@ export default function List() {
       const detailsElement = document.getElementById("details-panel");
       if (detailsElement) {
         setTimeout(() => {
-          detailsElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          detailsElement.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+          });
         }, 100);
       }
     }
   }, [isActive]);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadTanzen() {
+      try {
+        const res = await fetch("/data/el.json");
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data: Element[] = await res.json();
+        if (!cancelled) {
+          setelements(data);
+          // если текущий tieIem не валиден, можно сразу выбрать первый
+          if (!data.find((t) => t.name === isActive) && data.length > 0) {
+            setisActive(data[0].name);
+          }
+        }
+      } catch (e: any) {
+        if (!cancelled) setError(e.message ?? "Fehler beim Laden");
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+
+    loadTanzen();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const categories = [
     { key: "einz", label: "1 Schritt" },
@@ -54,8 +92,9 @@ export default function List() {
 
         {/* Mobile buttons list */}
         <div className="flex flex-wrap gap-2 mt-4 mb-2">
-          {ElementeMitEinemSchrit.filter((it) => it.marker === selectedMobileArea).map(
-            (item) => (
+          {elements
+            .filter((it) => it.marker === selectedMobileArea)
+            .map((item) => (
               <button
                 key={item.name}
                 className={`btn btn-empty !py-1.5 px-4 rounded-xl border text-sm transition-all duration-200 cursor-pointer ${
@@ -71,14 +110,13 @@ export default function List() {
               >
                 {item.name}
               </button>
-            ),
-          )}
+            ))}
         </div>
       </div>
 
       {/* Desktop view: Sidebar */}
       <div className="hidden md:flex flex-col gap-1.5 max-h-[80vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-transparent">
-        {ElementeMitEinemSchrit.map((item) => (
+        {elements.map((item) => (
           <button
             key={item.name}
             className={`btn btn-empty !py-1.5 px-4 rounded-xl border text-left text-sm transition-all duration-200 cursor-pointer ${
@@ -104,7 +142,7 @@ export default function List() {
       >
         <AnimatePresence initial={false} mode="wait">
           {isActive ? (
-            ElementeMitEinemSchrit.map(
+            elements.map(
               (item) =>
                 isActive === item.name && (
                   <motion.div
@@ -125,7 +163,7 @@ export default function List() {
             )
           ) : (
             <div className="flex items-center justify-center h-[150px] text-slate-500 text-sm md:text-base italic">
-              Выберите элемент для просмотра описания...
+              Select an item to view its description...
             </div>
           )}
         </AnimatePresence>

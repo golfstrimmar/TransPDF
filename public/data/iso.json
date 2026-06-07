@@ -1,0 +1,708 @@
+[
+  {
+    "name": "Tap",
+    "content": "Unbelastetes Aufsetzen des Fußes mit leichtem oder ohne Druck hei geschlossenen oder bei fast geschlossenen Füßen. In alle Richtungen moglich&a) Flat Tap: Touch (Fuß flach)&b) Ball Tap: Point (Fuß gestreckt)&c) Heel Tap: Flex (Fuß angewinkelt)&&&Сгибание стопы без нагрузки, с легким или без давления, или при почти сомкнутой стопе. Возможно движение во всех направлениях:&а) Плоское касание: касание (стопа плоская)и &б) Касание мяча: точка (стопа вытянута) и &в) Касание пяткой: сгибание (стопа согнута)",
+    "marker": "fuss"
+  },
+  {
+    "name": "Stomp",
+    "content": "Unbelastetes Aufsetzen des ganzen Fußes mit starkem Druck bei geschlossenen oder bei & geschlossenen Füßen, In alle Richtungen möglich&&&Без нагрузки на всю стопу с сильным давлением при закрытых или при закрытых стопах, возможно во всех направлениях",
+    "marker": "fuss"
+  },
+  {
+    "name": "Brush",
+    "content": "Gleiten, Bürsten des unbelasteten Fußes mit dem Ballen oder flach Gher den Boden, & anschließendes Abheben des ganzen Fußes vom Boden, vw und w Brushes sind möglich.&&&Возможно скольжение, расчесывание разгруженной стопы подушечкой стопы или разглаживание пола, а затем отрывание всей стопы от пола с помощью кистей vw и w.",
+    "marker": "fuss"
+  },
+  {
+    "name": "Scuff",
+    "content": "Brush mit der Ferse, auch Heel Brush genannt,&&&Чистка пяткой, также называемая чисткой пятки,",
+    "marker": "fuss"
+  },
+  {
+    "name": "Shuffle",
+    "content": "Vw und rw Brush des Fußes innerhalb einer Zeit (z.B, 1 +), also Doppelter Brush.&&&Кисть Vw и rw стопы в течение одного времени (например, 1 +), то есть двойная кисть.",
+    "marker": "fuss"
+  },
+  {
+    "name": "Beat Shuffle",
+    "content": "Zurückziehen des vorderen Fußes zum Standbein, Gewichtsübernahme, anschließendes & Anwinkeln des Schreitbeinknies und Vorwärtsgleiten des Fußballens.&&&Отведение передней части стопы назад к стойке, перенос веса, затем сгибание и разгибание колена шагающей ноги и скольжение футболиста вперед.",
+    "marker": "fuss"
+  },
+  {
+    "name": "Twist",
+    "content": "Das Hin- und Herdrehen oder das Verdrehen eines oder beider Füße (bei gelockeriem Krie) & ohne Richtungsänderung der Körperfront. Dabei kann der Fuß mit oder ohne Gewicht gedreht& werden, Es kann der Ballen oder die Ferse drehen,& Es gibt verschiedene Möglichkeiten:& a) beide Füße parallel& b) In and Out& c) Out and In&&&Вращение вперед-назад или скручивание одной или обеих ног (при расслабленном кри) и без изменения направления передней части тела. При этом стопа может вращаться с весом или без него, может вращаться подушечка стопы или пятка, и есть несколько способов: &а) обе ступни параллельно  &б) внутрь и наружу  &в) Наружу и внутрь",
+    "marker": "fuss"
+  },
+  {
+    "name": "Lift",
+    "content": "Das bewusste Anheben (Lift) der Ferze oder der Fussspitze mit oder ohne Gewicht&&&Сознательное поднятие (подъем) пятки или кончика стопы с весом или без него",
+    "marker": "fuss"
+  },
+  {
+    "name": "Drop",
+    "content": "Das bewusste Anheben (Lift) der Ferse oder der Fußspitze mit oder ohne Gewicht & Das bewusste oder plötzliche Fallenlassen der Ferse oder der Fußspitze aus erhobener & Position mit oder ohne Gewicht. (Ball-Drop, Heel-Drop)&&&&Сознательное поднятие (подъем) пятки или кончика стопы с весом или без него и сознательное или внезапное опускание пятки или кончика стопы из поднятого положения и с весом или без него. (Падение мяча, падение пятки)",
+    "marker": "fuss"
+  },
+  {
+    "name": "Bounce",
+    "content": "Das Federn in den Fußgelenken mit oder ohne Gewicht.&&&Пружинение в суставах ног с весом или без него.",
+    "marker": "fuss"
+  },
+  {
+    "name": "Shake",
+    "content": "Das Ausschütteln des freien Fußes.&&&Вытряхивание свободной ноги.",
+    "marker": "fuss"
+  },
+  {
+    "name": "Circle",
+    "content": "Kreise des unbelasteten Fußes, nach rechts oder links, um die Achse des Fußgelenkes&&&Кругами разгруженной стопы, вправо или влево, вокруг оси голеностопного сустава",
+    "marker": "fuss"
+  },
+  {
+    "name": "Halfcircle",
+    "content": "Halbkreise, nach rechts oder links, um die Achse des Fußgelenkes&&&Полукруги, вправо или влево, вокруг оси голеностопного сустава",
+    "marker": "fuss"
+  },
+  {
+    "name": "Step",
+    "content": "Schrift in alle Richtungen möglich. Meist in Verbandung mt einer festgelegten Technik&&&Написание возможно во всех направлениях.Обычно в сочетании с установленной техникой",
+    "marker": "bein"
+  },
+  {
+    "name": "Rock Step",
+    "content": "Besteht aus zwei Schriten (Wiege), Der erste Schrt kann vw,rw,sw oder dagonal gesetet werden. Der zweite Schrit wint a Platz belastet. Meist in Verbindung mit eirer festgeiegten Technik&&&Состоит из двух ступеней (люлька), первая шрт может быть выполнена в виде vw, rw,sw или dagonal. Второй шаг - занять освободившееся место. Обычно в сочетании с техникой, закрепленной на месте",
+    "marker": "bein"
+  },
+  {
+    "name": "Point",
+    "content": "Unbelastetes Aufsetzen des ausgestreckten Beines mit Abstand zum Körper, in alle&Richtungen möglich.&Endposition des Füßes&a) Point (Fuß gestreckt)&b) Flex (Fuß, angewinkell) auch Heal Point genannt&&&Возможно свободное размещение вытянутой ноги на расстоянии от тела, во всех направлениях.Конечное положение стопы и а) Точка (вытянутая стопа)и б) Сгибание (стопа, согнутая под углом) также называется точкой заживления",
+    "marker": "bein"
+  },
+  {
+    "name": "Ronde",
+    "content": "Kreisförmige Bewegung des unbelasteten Beines mit oder ohne Bodenkontakt &&&Круговые движения разгруженной ногой с контактом с землей или без него",
+    "marker": "bein"
+  },
+  {
+    "name": "Kneeraise",
+    "content": "Heben (Lift) des Schreitbeinknies.&Подъем (подъем) колена шагающей ноги.",
+    "marker": "bein"
+  },
+  {
+    "name": "Kick",
+    "content": "Heben (Lift) des Oberschenkels und anschtieflendes Strecken des Unterschenkels.& Endposition gestrecktes Bein in alle Richtungen moglich z B. Back Kick& a) Point (Fuß gestreckt)& b) Flex (Fuß angewinkelt) auch Heel Kick genannt&&&Подъем (подтяжка) бедра и подтягивание голени. И конечное положение вытянутая нога во всех возможных направлениях, например, удар в спину и а) Точка (стопа вытянута) и б) Сгибание (стопа согнута), также называемое ударом пяткой",
+    "marker": "bein"
+  },
+  {
+    "name": "Flick",
+    "content": "Heben (Lift) des Oberschenkels, strecken des Unterschenkels (Drop), Wiederanheben des&Oberschenkels (Lift)&Endposition angewinkeltes Bein&in alte Richtungen möglich, z.B. Side Flick (Karate Kick)&a) Point (Fuß gestreckt)&b) Flex (Fuß angewinkelt) auch Heel Flick genannt&&&Подъем (подъем) бедра, разгибание голени (опускание), повторный подъем бедра (подъем) и конечное положение согнутой ноги и в старых направлениях, например, боковой удар (удар карате) и &а) точка (стопа вытянута) и &б) сгибание (стопа согнута) также называется щелчком пяткой",
+    "marker": "bein"
+  },
+  {
+    "name": "Battement",
+    "content": "Das Hochschlagen (vw, rw oder sw) des gestreckten Beines, gestrecktes Bein zurück.&&&Удар вверх (vw, rw или sw) выпрямленной ноги, выпрямленная нога назад.",
+    "marker": "bein"
+  },
+  {
+    "name": " Wheel",
+    "content": "Das Hochschiagen (vw oder sw) des gestreckten Beines, anwinkeln des Unterschenkels zur Kneeraise Position, abstellen des Beines nahe dem Standbein.&&&Удар вверх (vw, rw или sw) выпрямленной ноги, выпрямленная нога назад.",
+    "marker": "bein"
+  },
+  {
+    "name": "Curl",
+    "content": "Anwinkeln (Lift) des Unterschenkels nach hinten.&&&Сгибание (подъем) голени назад.",
+    "marker": "bein"
+  },
+  {
+    "name": "Нop",
+    "content": "Das Hochspringen und Landen am Platz.&&&Прыжок в высоту и приземление на месте.",
+    "marker": "bein"
+  },
+  {
+    "name": "Jump",
+    "content": "Ein Sprung auf einen anderen Platz.&&&Прыжок в другое место.",
+    "marker": "bein"
+  },
+  {
+    "name": "Slide",
+    "content": "Auch Drag genannt Ein großer Schritt mit Seitenführung, das Schreitbein wird ohne Gewicht nachgezogen. In alle Richtungen möglich.&&&Также называемый перетаскиванием, это большой шаг с боковым направлением, шагающая нога подтягивается без веса. Возможно во всех направлениях.",
+    "marker": "bein"
+  },
+  {
+    "name": "Drop",
+    "content": "Starkes, plötzliches Beugen des Standbeinknies (oder beider Knie), auch Fallenlassen des Korpers  Gleichmäßiges Beugen nennt man Plie.&&&Резкое, резкое сгибание колена (или обоих колен), а также опускание тела при равномерном сгибании называется сгибанием.",
+    "marker": "bein"
+  },
+  {
+    "name": "Charleston-Stomp",
+    "content": "Vw- und rw-Rutschen auf einem Fuß oder beiden Füßen mit gleichzeitigem starken Absenkenvw (Drop) und Strecken des Beines bzw. der Beine rw.&&&Скольжение на одной ноге или обеих ногах с одновременным сильным опусканием (падением) и выпрямлением ноги или ступни соответственно. нога rw.",
+    "marker": "bein"
+  },
+  {
+    "name": "Skip",
+    "content": "Rutschen auf dem flachen Fuß des Standbeines oder auf beiden Füßen, in alle Richtungen  möglich. Skip vw wird im Stepptanz auch Chug genannt.&&&Скольжение возможно на плоской опоре стоячей ноги или на обеих ногах, во всех направлениях. В чечетке Skip vw также называют Chug.",
+    "marker": "bein"
+  },
+  {
+    "name": "Bounce",
+    "content": "Die Bounce Aktion ist ein Federn, die durch beugen und strecken der Knie und Fußgelenke  ausgelöst wird.&&&Действие отскока - это пружина, которая срабатывает при сгибании и разгибании коленей и суставов стоп.",
+    "marker": "bein"
+  },
+  {
+    "name": "Vibration",
+    "content": "Spannen und Entspannen verschiedener Muskelgruppen in schneller Reihenfolge, vor allem in den Beinen.&&&Напрягайте и расслабляйте различные группы мышц в быстрой последовательности, особенно в ногах.",
+    "marker": "bein"
+  },
+  {
+    "name": "Chicken Legs",
+    "content": "Ein- und Auswärtsdrehen (In and Out) eines Knies oder beider Knie bei Belastung auf einem oder beiden Beinen.&&&Вращение внутрь и наружу (внутрь и наружу) колена или обоих колен при нагрузке на одну или обе ноги.",
+    "marker": "bein"
+  },
+  {
+    "name": "Sit",
+    "content": "Auf einem oder beiden Beinen entsteht, sw, diag, oder rw, eine sitzende Position mit offener oder geschlossener Beinstellung.&&&На одной или обеих ногах создаётся сидячее положение с открытым или закрытым положением ног, sw, diag или rw.",
+    "marker": "positionen"
+  },
+  {
+    "name": "Split",
+    "content": "Der Split ist eine breite Beinposition (Grätsche), in alle Richtungen möglich. Das Gewicht befindet sich zwischen den Beinen, die Beine sind gestreckt.&&&Шпагат — это широкая позиция ног (разножка), возможная во всех направлениях. Вес находится между ногами, ноги выпрямлены.",
+    "marker": "positionen"
+  },
+  {
+    "name": "Lunge / Lunge-Point",
+    "content": "a) Die Lunge entsteht durch einen Ausfallschritt sw, diag. oder vw. In der Endposition ist das  Standbein gebeugt, das Schreitbein kann gestreckt sein. Die Position kann auch aus dem Split erreicht werden.& b) Der Lunge-Point wird durch einen Point erreicht. In der Endposition ist das Standbein  gebeugt, das Schreitbein kann gestreckt sein.&Bemerkung: Den Begriff Lunge gibt es als Position und als Bewegung, siehe 6.7. Lunge.&&&а) Легкое возникает в результате выпада sw, diag. или фольксваген. В конечном положении стоячая нога согнута, шагающая нога может быть выпрямлена. Позиция также может быть достигнута из разделения.&b) Точка легкого достигается через точку. В конечном положении стоячая нога согнута, шагающая нога может быть вытянута.&Примечание: Существует термин легкое как положение и как движение, см. 6.7. Легкое.",
+    "marker": "positionen"
+  },
+  {
+    "name": "Press-Line",
+    "content": "Ein Bein ist gebeugt, der Unterschenkel steht senkrecht und die Ferse ist vom Boden gelöst. Das andere Bein ist gestreckt. Das Gewicht befindet sich zwischen den Beinen. Die Position kann durch einen Ausfallschritt oder Split erreicht werden.&&&Одна нога согнута, голень стоит вертикально, а пятка оторвана от пола. Другая нога вытянута. Вес находится между ног. Позиция может быть достигнута с помощью выпада или раскола.",
+    "marker": "positionen"
+  },
+  {
+    "name": "Jazz-Line",
+    "content": "Ein Bein ist gebeugt, das Knie ist einwärts gedreht (In) und die Ferse ist vom Boden gelöst. Das andere Bein ist gestreckt. Das Gewicht befindet sich zwischen den Beinen. Die Position  kann durch einen Ausfallschritt sw oder Split erreicht werden.&&&Одна нога согнута, колено повернуто внутрь (внутрь), пятка оторвана от пола. Другая нога вытянута. Вес находится между ног. Позиция может быть достигнута с помощью выпада sw или раскола.",
+    "marker": "positionen"
+  },
+  {
+    "name": "Thrust",
+    "content": "Stoß des Beckens vw oder rw.&&&Толчок таза вперёд или назад.",
+    "marker": "becken"
+  },
+  {
+    "name": "Bounce",
+    "content": "Fortgesetztes Vor- und Rückfedern des Beckens.&&&Непрерывное вперёд-назад пружинение таза.",
+    "marker": "becken"
+  },
+  {
+    "name": "Roll",
+    "content": "Kreisförmige Bewegung des Beckens, wie ein Rad oder eine Walze. Vor- oder rückwärts bewegt (Radebene) ist es die Rotation um die horizontale Achse. Seitwärts (Türebene), nach rechts oder links bewegt, ist es eine Rotation um die sagittale Achse. Siehe unter 2.17. Kreisbewegung eines Zentrums.&&&Круговое движение таза, как у колеса или валика. При движении вперёд или назад (плоскость колеса) это вращение вокруг горизонтальной оси. При движении вбок (плоскость двери), вправо или влево, это вращение вокруг сагиттальной оси. См. пункт 2.17. Круговое движение центра.",
+    "marker": "becken"
+  },
+  {
+    "name": "Halfroll",
+    "content": "Eine Schaukelbewegung mit halbkreisförmiger Rollbewegung des Beckens (vw, rw oder sw) um die Achse der Hüftgelenke.&&&Движение качели с полукруговым перекатывающим движением таза (вперёд, назад или вбок) вокруг оси тазобедренных суставов.",
+    "marker": "becken"
+  },
+  {
+    "name": "Thrust",
+    "content": "Stoß einer Hüfte sw, diag vw oder diag rw über Schreit- oder Standbein. Thrusts mit Gewichtsübertragung von einem Bein auf das andere werden auch Hip Rock genannt. Siehe unter WTP.&&&Толчок одного бедра вбок, диагонально вперёд или диагонально назад через шаговую или опорную ногу. Толчки с переносом веса с одной ноги на другую также называются Hip Rock. См. пункт WTP.",
+    "marker": "hüften"
+  },
+  {
+    "name": "Lift",
+    "content": "Anheben der Hüfte über dem unbelasteten Bein.&&&Подъём бедра над ненагруженной ногой.",
+    "marker": "hüften"
+  },
+  {
+    "name": "Drop",
+    "content": "Fallenlassen der Hüfte nach einem Lift.&&&Опускание бедра после подъёма (лифта).",
+    "marker": "hüften"
+  },
+  {
+    "name": "Shake",
+    "content": "Das schnelle Schütteln (hoch / runter oder vw / rw) der Hüften. Reaktionen in den benachbarten Bewegungszentren.&a) über dem Standbein&b) über dem Schreitbein&c) über beiden Beinen&&&Быстрое потряхивание (вверх / вниз или вперёд / назад) бёдер. Реакции в соседних центрах движения.&a) над опорной ногой&b) над шаговой ногой&c) над обеими ногами",
+    "marker": "hüften"
+  },
+  {
+    "name": "Twist",
+    "content": "Das Hin- und Herdrehen der Hüften ohne Richtungsänderung der Körperfront.&a) über dem Standbein&b) über beiden Beinen&&&Поворот тазом туда-сюда без изменения направления корпуса.",
+    "marker": "hüften"
+  },
+  {
+    "name": "Circle",
+    "content": "Kreisförmige Bewegung der Hüften parallel zum Boden (Tischebene).&Nach rechts oder links bewegt ist es eine Rotation um die vertikale Achse (Hulahuop-Reifen).&Es gibt verschiedene Möglichkeiten:&a) über dem Standbein&b) über dem Schreitbein&c) über beiden Beinen&Siehe unter 2.17. Kreisbewegung eines Zentrums.&&&Круговое движение бёдер параллельно полу (в плоскости стола).&При движении вправо или влево это вращение вокруг вертикальной оси (как обруч хулахуп).&Есть разные варианты:&a) над опорной ногой&b) над шаговой ногой&c) над обеими ногами&См. пункт 2.17. Круговое движение центра.",
+    "marker": "hüften"
+  },
+  {
+    "name": "Halfcircle",
+    "content": "Halbkreisförmige Bewegung der Hüften parallel zum Boden (Tischebene).&Nach rechts oder links bewegt ist es eine Rotation um die vertikale Achse (Hulahuop-Reifen).&Es gibt verschiedene Möglichkeiten:&a) seit - vor - seit&seit - rück - seit&b) vor - seit - rück&rück - seit - vor&Bemerkung&Wie bei einem Circle kann die Bewegung unterschiedlich ausgeführt werden:&a) über dem Standbein&b) über dem Schreitbein&c) über beiden Beinen&&&Полукруговое движение бёдер параллельно полу (в плоскости стола).&При движении вправо или влево это вращение вокруг вертикальной оси (как обруч хулахуп).&Есть разные варианты:&a) вбок - вперёд - вбок&вбок - назад - вбок&b) вперёд - вбок - назад&назад - вбок - вперёд&Примечание&Как и в Circle, движение можно выполнять по-разному:&a) над опорной ногой&b) над шаговой ногой&c) над обеими ногами",
+    "marker": "hüften"
+  },
+  {
+    "name": "Figure Eight",
+    "content": "Zwei Circle, die miteinander verbunden, eine liegende Acht ergeben.&&&Два круга, соединённые между собой, образуют лежащую восьмёрку.",
+    "marker": "hüften"
+  },
+  {
+    "name": "Latinhip",
+    "content": "Bewegung mit der dem Schreitbein entgegen gesetzten Hüfte. Diese Bewegung wird auch Merengue Hip oder Opposite Hip genannt. Die Latinhip kann nur in Verbindung mit einem Schritt getanzt werden. In alle Richtungen möglich. Beginne mit Gewicht auf dem rechten Bein. Standbeinknie gerade, Hüfte rechts. &1 LF klein sw, Knie gebeugt, Hüfte rechts &+ Linkes Knie strecken mit gleichzeitigem Hüftwechsel nach links &2 RF fast schließen, Knie gebeugt, Hüfte links &+ Rechtes Knie strecken mit gleichzeitigem Hüftwechsel nach rechts &Bemerkung: Der Schrittsansatz ist auf Ballen oder Ballen Flach möglich. Die Ferse hat am Ende der Hüftbewegung Kontakt zum Boden.&&&Движение бедром, противоположным шаговой ноге. Это движение также называется Merengue Hip или Opposite Hip. Latinhip можно танцевать только в сочетании с шагом. Возможна во всех направлениях. Начни с веса на правой ноге. Колено опорной ноги прямое, таз вправо. &1 ЛФ небольшой шаг вбок, колено согнуто, таз вправо &+ Разгибание левого колена с одновременным переносом таза влево &2 ПФ почти закрыть, колено согнуто, таз влево &+ Разгибание правого колена с одновременным переносом таза вправо &Примечание: Начало шага возможно на носок или на носок с опусканием на всю стопу. Пятка в конце движения таза касается пола.",
+    "marker": "hüften"
+  },
+  {
+    "name": "Soulhip",
+    "content": "Ein Halfcircle mit leichtem Hip-Lift vw-sw mit der Schreitbeinhüfte, wodurch der Schritt ausgelöst wird. In alle Richtungen möglich.&&&Полукруг с лёгким Hip-Lift вперёд-вбок со стороны шаговой ноги, благодаря чему запускается шаг. Возможен во всех направлениях.",
+    "marker": "hüften"
+  },
+  {
+    "name": "Socahip",
+    "content": "Auch Hockey Sock Hip genannt.& Bei offener Fußposition und gebeugten Knien wird das Gewicht mit einer Halfroll sw von einem Bein auf das andere übertragen. Wie bei einem Pendel ist die hin- und her schwingende Bewegung in der Mitte etwas tiefer und an den Seiten etwas höher. Dadurch hebt das frei werdende Schreitbein bei der Gewichtsverlagerung etwas ab. Diese Bewegung ist der Grundschritt des Karibischen Tanzes \"Soca\" (= Soul Calypso) und kann nach rechts oder links gedreht werden.&&&Также называется Hockey Sock Hip.При открытом положении стоп и согнутых коленях вес переносится с одной ноги на другую с помощью Halfroll вбокКак у маятника, покачивающееся движение посередине чуть ниже, а по бокам чуть выше.Благодаря этому освобождающаяся шаговая нога при переносе веса немного отрывается.Это движение является базовым шагом карибского танца \"Soca\" (= Soul Calypso) и может выполняться с поворотом вправо или влево.",
+    "marker": "hüften"
+  },
+  {
+    "name": "Flat-Back",
+    "content": "Vorlehnen des Oberkörpers bei geradem Rücken bis max. Bodenparallelität (Tabletop).&&&Наклон верхней части корпуса вперёд при прямой спине до максимальной параллельности полу (Tabletop).",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Back-Bend",
+    "content": "Neigen des Oberkörpers nach hinten bei geradem Rücken. Werden zusätzlich zum Back-Bend die Knie gebeugt, nennt man die Bewegung Hintern.&&&Наклон верхней части корпуса назад при прямой спине. Если дополнительно к Back-Bend сгибаются колени, движение называется Hintern.",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Thrust",
+    "content": "Stoß oder \"Verschieben\" des gesamten Brustkorbes vw, rw sw oder diagonal durch starkes Dehnen der Brustwirbelsäule.&&&Толчок или «смещение» всей грудной клетки вперёд, назад, вбок или по диагонали за счёт сильного вытяжения грудного отдела позвоночника.",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Contract",
+    "content": "Ribcage Thrust rw (In), oft mit gleichzeitigem vw-Thrust des Beckens (Rundrücken).&&&Толчок грудной клетки назад (In), часто одновременно с толчком таза вперёд (округлая спина).",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Release",
+    "content": "Ribcage Thrust vw (Out), oft mit gleichzeitigem rw-Thrust des Beckens (Hohlkreuz).&&&Толчок грудной клетки вперёд (Out), часто одновременно с толчком таза назад (прогиб в пояснице).",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Bounce",
+    "content": "Fortgesetztes Auf- und Ab-, Vor- und Rück- oder Seitwärtsfedern des Oberkörpers.&&&Непрерывное пружинение верхней части корпуса вверх и вниз, вперёд и назад или вбок.",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Tilt",
+    "content": "Verschieben des Brustkorbs zur Seite mit gleichzeitigem Dehnen der Bewegung zugewandten Seite (Flankendehnung).&&&Смещение грудной клетки в сторону с одновременным растяжением стороны, обращённой к движению (растяжение боковой линии).",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Twist",
+    "content": "Das Hin- und Herdrehen oder das Verdrehen des Oberkörpers gegen den feststehenden Unterkörper.&&&Поворот туда-сюда или скручивание верхней части корпуса относительно неподвижной нижней части корпуса.",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Circle",
+    "content": "Kreisförmige Bewegung des Oberkörpers parallel zum Boden (Tischebene). Nach rechts oder links gedreht ist es eine Rotation um die vertikale Achse (Hulahuop-Reifen).&&&Круговое движение верхней части корпуса параллельно полу (в плоскости стола). При повороте вправо или влево это вращение вокруг вертикальной оси (как обруч хулахуп).",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Halfcircle",
+    "content": "Halbkreisförmige Bewegung des Oberkörpers parallel zum Boden (Tischebene). Nach rechts oder links gedreht ist es eine Rotation um die vertikale Achse (Hulahuop-Reifen). Es gibt verschiedene Möglichkeiten:&a) seit - vor - seit&seit - rück - seit&b) vor - seit - rück&rück - seit - vor&&&Полукруговое движение верхней части корпуса параллельно полу (в плоскости стола). При повороте вправо или влево это вращение вокруг вертикальной оси (как обруч хулахуп). Есть разные варианты:&a) вбок - вперёд - вбок&вбок - назад - вбок&b) вперёд - вбок - назад&назад - вбок - вперёд",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Figure Eight",
+    "content": "Zwei Halfcircle, die miteinander verbunden, eine liegende Acht ergeben.&&&Два Halfcircle, соединённые между собой, образуют лежащую восьмёрку.",
+    "marker": "oberkörper"
+  },
+  {
+    "name": "Thrust",
+    "content": "Stoß einer oder beider Schultern vw oder rw.&&&Толчок одного или обоих плеч вперёд или назад.",
+    "marker": "schultern"
+  },
+  {
+    "name": "Lift",
+    "content": "Anheben einer Schulter oder beider Schultern.&&&Подъём одного или обоих плеч.",
+    "marker": "schultern"
+  },
+  {
+    "name": "Drop",
+    "content": "Bewusste Abwärtsbewegung einer oder beider Schultern.&&&Осознанное движение одного или обоих плеч вниз.",
+    "marker": "schultern"
+  },
+  {
+    "name": "Bounce",
+    "content": "Fortgesetztes Auf- und Abfedern einer oder beider Schultern.&&&Непрерывное пружинение одного или обоих плеч вверх и вниз.",
+    "marker": "schultern"
+  },
+  {
+    "name": "Shake",
+    "content": "Das schnelle Schütteln (hoch / runter oder vw / rw) der Schultern. Reaktionen in den benachbarten Bewegungszentren.&&&Быстрое потряхивание (вверх / вниз или вперёд / назад) плеч. Реакции в соседних центрах движения.",
+    "marker": "schultern"
+  },
+  {
+    "name": "Roll",
+    "content": "Kreisförmige Bewegung einer oder beider Schultern, wie ein Rad oder eine Walze. Vor- oder rückwärts bewegt (Radebene) ist es die Rotation um die horizontale Achse. Seitwärts (Türebene), nach rechts oder links bewegt, ist es eine Rotation um die sagittale Achse. Die Bewegung kann durch den Brustkorb unterstützt werden. Siehe unter 2.7. Kreisbewegung eines Zentrums.&&&Круговое движение одного или обоих плеч, как колесо или валик. При движении вперёд или назад (плоскость колеса) это вращение вокруг горизонтальной оси. При движении вбок (плоскость двери), вправо или влево, это вращение вокруг сагиттальной оси. Движение может поддерживаться грудной клеткой. См. пункт 2.7. Круговое движение центра.",
+    "marker": "schultern"
+  },
+  {
+    "name": "Halfroll",
+    "content": "Eine Schaukelbewegung mit halbkreisförmiger Rollbewegung einer oder beider Schultern (vw, rw oder sw) um die Achse der Schultergelenke.&&&Движение качели с полукруговым перекатывающим движением одного или обоих плеч (вперёд, назад или вбок) вокруг оси плечевых суставов.",
+    "marker": "schultern"
+  },
+  {
+    "name": "Figure Eight",
+    "content": "Zwei Rolls, die miteinander verbunden, eine \"liegende\" oder \"stehende\" Acht ergeben.&&&Два Roll, соединённые между собой, образуют «лежащую» или «стоящую» восьмёрку.",
+    "marker": "schultern"
+  },
+  {
+    "name": "Hand",
+    "content": "Die beschriebenen Bewegungen sind eine Auswahl häufig benutzter Techniken. Weitere Handbewegungen sind möglich und werden gesondert in einer Choreographie beschrieben. Bemerkung: Die Bewegungen Point und Flex beziehen sich auf das Handgelenk und können mit verschiedenen Techniken kombiniert werden. Siehe auch 2.7. Point: gerades Handgelenk. Flex Out: abgewinkeltes Handgelenk, max. rechter Winkel zwischen Handrücken und Unterarm. Flex In: angewinkeltes Handgelenk, max. rechter Winkel zwischen Handfläche und Unterarm.&&&Описанные движения — это выбор часто используемых техник. Другие движения рук возможны и отдельно описываются в хореографии. Примечание: движения Point и Flex относятся к запястью и могут сочетаться с различными техниками. См. также 2.7. Point: прямое запястье. Flex Out: согнутое запястье, максимально прямой угол между тыльной стороной кисти и предплечьем. Flex In: согнутое запястье, максимально прямой угол между ладонью и предплечьем.",
+    "marker": "hand"
+  },
+  {
+    "name": "Relax-Hand",
+    "content": "Lockere Faust.&&&Расслабленный кулак.",
+    "marker": "hand"
+  },
+  {
+    "name": "Flat-Hand",
+    "content": "Alle Finger gestreckt aneinander.&&&Все пальцы выпрямлены и вместе.",
+    "marker": "hand"
+  },
+  {
+    "name": "Jazz-Hand",
+    "content": "Abgespreizte Finger.&&&Пальцы разведены в стороны.",
+    "marker": "hand"
+  },
+  {
+    "name": "Punch",
+    "content": "Faust.&&&Кулак.",
+    "marker": "hand"
+  },
+  {
+    "name": "Point",
+    "content": "Ein oder mehrere Finger ausgestreckt.&&&Один или несколько пальцев вытянуты.",
+    "marker": "hand"
+  },
+  {
+    "name": "Gunpoint",
+    "content": "Finger wie eine Pistole halten.&&&Пальцы держат как пистолет.",
+    "marker": "hand"
+  },
+  {
+    "name": "Hitchhiker",
+    "content": "Faust mit hochgehaltenem Daumen (per Anhalter fahren). Durch Drehen des Handgelenks kann der Daumen auch zur Seite oder nach unten zeigen.&&&Кулак с поднятым вверх большим пальцем (как при автостопе). При повороте запястья большой палец может также быть направлен в сторону или вниз.",
+    "marker": "hand"
+  },
+  {
+    "name": "Wave",
+    "content": "Wink- oder Wellenbewegung der Hand/Hände. In verschiedenen Armpositionen.&&&Маховое или волнообразное движение руки/рук. В различных положениях рук.",
+    "marker": "hand"
+  },
+  {
+    "name": "Shake",
+    "content": "Das schnelle Schütteln der Hand/Hände. Nicht zu verwechseln mit \"rechte zu rechter Handhaltung\" (Shake Hand).&&&Быстрое потряхивание руки/рук. Не путать с \"правое к правому положению рук\" (Shake Hand).",
+    "marker": "hand"
+  },
+  {
+    "name": "Circle",
+    "content": "Kreise, nach rechts oder links, um die Achse des Handgelenks. Im HipHop auch Locking genannt.&&&Круги вправо или влево вокруг оси запястья. В HipHop также называется Locking.",
+    "marker": "hand"
+  },
+  {
+    "name": "Halfcircle",
+    "content": "Halbkreise, nach rechts oder links, um die Achse des Handgelenks. Im HipHop auch Locking genannt.&&&Полукруги вправо или влево вокруг оси запястья. В HipHop также называется Locking.",
+    "marker": "hand"
+  },
+  {
+    "name": "Snap",
+    "content": "Mit den Fingern schnippen.&&&Щёлкать пальцами.",
+    "marker": "hand"
+  },
+  {
+    "name": "Clap",
+    "content": "In die Hände oder mit einer Hand auf ein Körperteil klatschen. z.B. auf den Oberschenkel.&&&Хлопать в ладони или одной рукой по части тела, например по бедру.",
+    "marker": "hand"
+  },
+
+  {
+    "name": "Arm",
+    "content": "Die Arme bieten die größtmögliche Bewegungsvielfalt. Sie können in alle Raumrichtungen bewegt oder durch die Gelenke unterteilt bewegt werden.&&&Руки обеспечивают максимально возможное разнообразие движений. Они могут двигаться во всех направлениях пространства или по частям за счёт суставов.",
+    "marker": "arm"
+  },
+  {
+    "name": "Aktionen",
+    "content": "Armformen oder Positionen können durch verschiedene Aktionen erreicht werden.&&&Формы/позиции рук могут достигаться с помощью различных действий.",
+    "marker": "arm"
+  },
+  {
+    "name": "Lift",
+    "content": "heben&&&поднимать.",
+    "marker": "arm"
+  },
+  {
+    "name": "Drop",
+    "content": "bewusstes Fallenlassen&&&осознанное опускание/отпускание.",
+    "marker": "arm"
+  },
+  {
+    "name": "Point",
+    "content": "strecken, ausstrecken.&&&тянуть, вытягивать (руку/палец и т.п.).",
+    "marker": "arm"
+  },
+  {
+    "name": "Push",
+    "content": "schieben oder stoßen.&&&толкать или отталкивать.",
+    "marker": "arm"
+  },
+  {
+    "name": "Pull",
+    "content": "ziehen, zurückziehen, einziehen.&&&тянуть, оттягивать назад, втягивать.",
+    "marker": "arm"
+  },
+  {
+    "name": "Rebound",
+    "content": "hin- und zurückprallen, Jo-Jo, boxen.&&&отскакивать туда‑обратно, как йо-йо; использовать при боксировании.",
+    "marker": "arm"
+  },
+  {
+    "name": "Bounce",
+    "content": "fortgesetztes Auf- und Abfedern oder Vor- und Rückfedern.&&&продолжительное пружинящее движение вверх‑вниз или вперёд‑назад.",
+    "marker": "arm"
+  },
+  {
+    "name": "Whip",
+    "content": "peitschen, schlagen.&&&хлестать, наносить удар (как плетью).",
+    "marker": "arm"
+  },
+  {
+    "name": "Wave",
+    "content": "Wellenbewegung.&&&волнообразное движение.",
+    "marker": "arm"
+  },
+  {
+    "name": "Shake",
+    "content": "schnelles Schütteln.&&&быстрое встряхивание.",
+    "marker": "arm"
+  },
+  {
+    "name": "Circle",
+    "content": "Kreise, nach rechts oder links, um die Achse des Schultergelenks. Kreise des Unterarms um das Ellenbogengelenk werden Crank (Kurbel) genannt.&&&Круговые движения вправо или влево вокруг оси плечевого сустава. Круги предплечья вокруг локтевого сустава называются Crank (курбель/«вращение как ручка»).",
+    "marker": "arm"
+  },
+  {
+    "name": "Halfcircle",
+    "content": "Halbkreise, nach rechts oder links, um die Achse des Schultergelenks. Halbkreise des Unterarms um das Ellenbogengelenk werden Crank (Kurbel) genannt.&&&Полуокружности вправо или влево вокруг оси плечевого сустава. Полуокружности предплечья вокруг локтевого сустава называются Crank (курбель).",
+    "marker": "arm"
+  },
+  {
+    "name": "Grundformen",
+    "content": "Die Grundformen beschreiben nur die „Form“ der Arme. Sie sind unabhängig von Raumrichtungen, Aktionen oder Kombinationen, z.B. kann der Long-Arm in alle Richtungen (die das Schultergelenk zulässt) gehalten werden.&&&Базовые формы описывают только «форму» рук. Они не зависят от направлений в пространстве, действий или комбинаций; например, «Long Arm» можно держать во всех направлениях, которые допускает плечевой сустав.",
+    "marker": "arm"
+  },
+  {
+    "name": "Short",
+    "content": "Oberarm nach oder eng am Oberkörper, Unterarm sw oder leicht nach oben bzw. unten.&&&Плечо направлено вперёд или вплотную к корпусу, предплечье диагонально вниз или слегка вверх/вниз.",
+    "marker": "arm"
+  },
+  {
+    "name": "Long",
+    "content": "Auch Point genannt. Ober- und Unterarm ausgestreckt.&&&Также называется Point. Плечо и предплечье выпрямлены.",
+    "marker": "arm"
+  },
+  {
+    "name": "Curve",
+    "content": "Ober-, Unterarm und Hand bilden eine Kurve (Halbkreis).&&&Плечо, предплечье и кисть образуют изогнутую линию (полукруг).",
+    "marker": "arm"
+  },
+  {
+    "name": "Corner",
+    "content": "Oberarm ausgestreckt. Unterarm im rechten Winkel zum Oberarm.&&&Плечо вытянуто, предплечье под прямым углом к плечу.",
+    "marker": "arm"
+  },
+  {
+    "name": "Snap",
+    "content": "Eingeklapper Unterarm. Oberarm kann ausgestreckt (Out) oder angewinkelt (In) sein.&&&Предплечье сложено (поджато). Плечо может быть выпрямлено (Out) или согнуто (In).",
+    "marker": "arm"
+  },
+  {
+    "name": "T-Position",
+    "content": "Die Positionen beziehen sich auf beide Arme. Long Arms seitwärts gehalten.&&&Позиции относятся к обеим рукам. Long Arms удерживаются в стороны.",
+    "marker": "arm"
+  },
+  {
+    "name": "V-Position",
+    "content": "Diagonal gehaltene Long-Arms die ein bilden. Kann in alle Richtungen (die das Schultergelenk zulässt) gehalten werden.&&&Диагонально удерживаемые Long Arms, образующие букву V. Может удерживаться во всех направлениях, которые допускает плечевой сустав.",
+    "marker": "arm"
+  },
+  {
+    "name": "W-Position",
+    "content": "Kann auch leicht vw oder rw gehalten werden. Bemerkung: Ägypter nennt man die W-Position mit Kombinationen der Flex-Out und Flex-In Handbewegung.&&&Может также удерживаться слегка вперёд или назад. Примечание: W-Position с комбинациями движений Flex-Out и Flex-In называется Ägypter.",
+    "marker": "arm"
+  },
+  {
+    "name": "Joch",
+    "content": "Die Position der Oberarme ist immer sw. Die zusätzlichen Bezeichnungen (Hoch, Vor und Doppel) beschreiben die Positionen der Unterarme. Aktionen oder Positionen werden. Joch. Joch-Hoch. Joch-Vor. Doppel-Joch links. Bemerkung: Doppel-Joch links = linker Unterarm hoch, rechter Unterarm tief. Doppel-Joch rechts = rechter Unterarm hoch, linker Unterarm tief.&&&Положение плеч всегда вбок. Дополнительные обозначения (Hoch, Vor и Doppel) описывают положения предплечий. Действия или позиции выполняются. Joch. Joch-Hoch. Joch-Vor. Doppel-Joch слева. Примечание: Doppel-Joch слева = левое предплечье вверх, правое предплечье вниз. Doppel-Joch справа = правое предплечье вверх, левое предплечье вниз.",
+    "marker": "arm"
+  },
+  {
+    "name": "Open-Close Arms / Open-Cross Arms",
+    "content": "Long- oder Short-Arms aus einer Seitposition (Out) vor dem Körper schließen (In) oder kreuzen. Die Bewegung kann fortlaufend sein.&&&Long- oder Short-Arms из боковой позиции (Out) перед корпусом закрываются (In) или перекрещиваются. Движение может быть непрерывным.",
+    "marker": "arm"
+  },
+  {
+    "name": "Butterfly",
+    "content": "Aus der Joch-Hoch Position (Out) die Arme vor dem Körper schließen (In). Die Bewegung kann fortlaufend sein.&&&Из позиции Joch-Hoch (Out) руки закрываются перед корпусом (In). Движение может быть непрерывным.",
+    "marker": "arm"
+  },
+  {
+    "name": "Chicken Wings",
+    "content": "Seitliches Heran- (In) und Wegführen (Out) der Oberarme mit Snap-Arms. (Ententanz)&&&Боковое приведение (In) и отведение (Out) плечевых частей рук с Snap-Arms. (Танец утят)",
+    "marker": "arm"
+  },
+  {
+    "name": "Roly Poly",
+    "content": "Umeinanderdrehen der Unterarme vor dem Körper (Wolle wickeln). Es kann vw oder rw begonnen werden.&&&Перекручивание предплечий перед корпусом (наматывание пряжи). Можно начинать вперёд или назад.",
+    "marker": "arm"
+  },
+  {
+    "name": "Shampoo / Caresse",
+    "content": "Hand streicht um den Kopf. a) von vorn nach hinten b) von hinten nach vorn 1. Caresse-Out der Ellenbogen geht zur Seite 2. Caresse-In der Ellenbogen geht zum Körperzentrum&&&Рука скользит вокруг головы. a) спереди назад b) сзади вперёд 1. Caresse-Out локоть уходит в сторону 2. Caresse-In локоть идёт к центру тела",
+    "marker": "arm"
+  },
+  {
+    "name": "Turn",
+    "content": "Drehen des Kopfes z.B. von links nach rechts, max. 180°. Das Hin- und Herdrehen des Kopfes nennt man auch Twist. Das schnelle Hin- und Herdrehen des Kopfes nennt man auch Shake.&&&Поворот головы, например слева направо, максимум на 180°. Поворот головы туда-сюда также называется Twist. Быстрый поворот головы туда-сюда также называется Shake.",
+    "marker": "kopf"
+  },
+  {
+    "name": "Thrust",
+    "content": "Stoß des Kopfes vw, rw oder sw parallel zum Boden. Sw-Thrusts nennt man auch Sundari aus dem asiatischen Tempeltanz entlehnt. Ein fortgesetztes Federn nennt man Bounce.&&&Толчок головы вперёд, назад или вбок параллельно полу. Sw-Thrusts также называют Sundari, заимствованное из азиатского храмового танца. Непрерывное пружинение называется Bounce.",
+    "marker": "kopf"
+  },
+  {
+    "name": "Tilt",
+    "content": "Nicken mit dem Kopf oder Neigen des Kopfes und der Halswirbelsäule vw oder rw. Ein fortgesetztes Auf- und Abfedern nennt man Bounce. Das schnelle Schütteln hoch und runter nennt man Shake.&&&Кивок головой или наклон головы и шейного отдела позвоночника вперёд или назад. Непрерывное пружинение вверх и вниз называется Bounce. Быстрое потряхивание вверх и вниз называется Shake.",
+    "marker": "kopf"
+  },
+  {
+    "name": "Lean",
+    "content": "Neigen des Kopfes und der Halswirbelsäule zur Seite.&&&Наклон головы и шейного отдела позвоночника в сторону.",
+    "marker": "kopf"
+  },
+  {
+    "name": "Circle",
+    "content": "Kreise, nach rechts oder links, um die Achse der unteren Halswirbelsäule. Bemerkung: Halfcircle und Circle sollten klein, langsam und kontrolliert ausgeführt werden. Bei unkontrollierten und schnellen Bewegungen kann es zu Gleichgewichtsstörungen und Schäden der kleinen, seitlich liegenden Gelenke der Halswirbelsäule kommen.&&&Круги вправо или влево вокруг оси нижнего шейного отдела позвоночника. Примечание: Halfcircle и Circle следует выполнять маленько, медленно и контролируемо. При неконтролируемых и быстрых движениях могут возникнуть нарушения равновесия и повреждения маленьких боковых суставов шейного отдела позвоночника.",
+    "marker": "kopf"
+  },
+  {
+    "name": "Halfcircle",
+    "content": "Halbkreis, nach rechts oder links, um die Achse der unteren Halswirbelsäule mit einem Lean oder Tilt begonnen. Ein Head-Swing ist ein \"schwungvoller\" Halbkreis vorwärts nach einem Lean.&&&Полукруг вправо или влево вокруг оси нижнего шейного отдела позвоночника, начинающийся с Lean или Tilt. Head-Swing — это «размашистый» полукруг вперёд после Lean.",
+    "marker": "kopf"
+  },
+  {
+    "name": "Drehungen",
+    "content": "Bei Drehungen auf einem Bein verläuft die Drehachse nicht genau durch die Mitte des Körpers, sondern mehr durch die Körperseite des belasteten Fußes. Die andere Körperseite befindet sich dabei im Außenkreis. Bei Drehungen auf zwei Beinen verläuft die Drehachse durch die Körpermitte. Es gibt verschiedene Aktionen um eine Drehung einzuleiten: &a) eine Körperseite vw oder rw drehen &b) verdrehen (vertwisten) des Ober- gegen den Unterkörper &c) durch bewusstes Verdrehen des Oberkörpers oder &d) durch bewusstes Verdrehen des Beckens &&Bemerkung: Drehungen können durch zusätzlichen Schwung der Arme und durch bewusstes Drehen des Kopfes (Head Spot) unterstützt werden. Es gibt verschiedene Möglichkeiten zu drehen: &a) auf einem Bein Outside Turn / Auswärtsdrehung Inside Turn / Einwärtsdrehung &b) auf zwei Beinen &c) über mehrere Schritte verteilt Nachfolgend sind die wichtigsten Drehformen beschrieben.&&&При вращениях на одной ноге ось вращения проходит не точно через середину тела, а больше через сторону тела опорной ноги. Другая сторона тела при этом находится на внешнем круге. При вращениях на двух ногах ось вращения проходит через середину тела. Существуют разные действия, чтобы начать вращение: &a) повернуть одну сторону тела вперёд или назад &b) скручивание (vertwisten) верхней части тела относительно нижней &c) за счёт сознательного поворота верхней части тела &d) за счёт сознательного поворота таза &Примечание: Вращения могут поддерживаться дополнительным импульсом рук и сознательным поворотом головы (Head Spot). Существуют разные способы вращения: &a) на одной ноге Outside Turn / наружное вращение Inside Turn / внутреннее вращение &b) на двух ногах &c) распределённые по нескольким шагам Далее описаны основные формы вращений.",
+    "marker": "drehungen"
+  },
+  {
+    "name": "Swivel",
+    "content": "Auf einem Bein. Ist ein Schritt und die anschließende In- oder Outside Turn auf dem flachen Fußballen. Eine Richtungsänderung des ganzen Körpers oder nur bis zur Hüfte ist möglich.&&&На одной ноге. Это шаг и последующий In- или Outside Turn на плоском носке стопы. Возможна смена направления всего тела или только до уровня таза.",
+    "marker": "drehungen"
+  },
+  {
+    "name": "Spin",
+    "content": "Auf einem Bein. &a) Outside Turn auf dem Ballen eines Fußes, das Schreitbein kann ohne Gewicht herangeführt werden. Auf dem RF nach rechts oder auf dem LF nach links. &b) Inside Turn auf dem Ballen eines Fußes, das Schreitbein kann ohne Gewicht herangeführt, oder locker vor das Standbein gekreuzt werden. Auf dem RF nach links oder auf dem LF nach rechts.&&&На одной ноге. &a) Outside Turn на подушечке одной стопы, шаговая нога может подводиться без веса. На ПФ вправо или на ЛФ влево. &b) Inside Turn на подушечке одной стопы, шаговая нога может подводиться без веса или свободно перекрещиваться перед опорной ногой. На ПФ влево или на ЛФ вправо.",
+    "marker": "drehungen"
+  },
+  {
+    "name": "Pivot(Achse)",
+    "content": "Auf einem Bein. Drehung auf dem flachen Ballen eines Fußes, wobei der andere Fuß während der Drehung unbelastet, vorwärts oder rückwärts (in Schrittposition) gehalten wird. &a) Outside Turn nach einem Vorwärtsschritt mit dem RF oder LF &b) Inside Turn nach einem Rückwärtsschritt mit dem RF oder LF&&&На одной ноге. Вращение на плоском носке одной стопы, при этом другая стопа во время вращения остаётся ненагруженной и удерживается вперёд или назад (в шаговой позиции). &a) Outside Turn после шага вперёд правой или левой ногой&b) Inside Turn после шага назад правой или левой ногой",
+    "marker": "drehungen"
+  },
+  {
+    "name": "Jump Turn",
+    "content": "Inside Turn oder Outside Turn. Springen auf einem oder beiden Füßen. Es kann nach rechts oder links gedreht werden. Die Drehung kann über einem oder mehreren Sprüngen erfolgen (z.B. im Rhythmus 1+2).&&&Inside Turn или Outside Turn. Прыжок на одной или обеих ногах. Можно вращаться вправо или влево. Вращение может выполняться за один или несколько прыжков (например, в ритме 1+2).",
+    "marker": "drehungen"
+  },
+  {
+    "name": "Twist Turn",
+    "content": "Inside Turn auf zwei Beinen. Aus einer gekreuzten Fußposition auf beiden Füßen zum hinteren Bein ausdrehen.& a) Gewichtsverteilung auf dem Ballen des rückwärtigen und der Ferse des vorderen Fußes bei flachen Füßen. Die Füße entkreuzen sich und enden in paralleler Position, geschlossen oder mit leichtem Abstand.& b) Gewichtsverteilung auf dem Ballen des rückwärtigen und dem Ballen des vorderen Fußes bei flachen Füßen. Die Füße entkreuzen sich und enden in paralleler Position, vorwärts oder vorwärts und überkreuz.&&&Inside Turn на двух ногах. Из перекрещенной позиции стоп на обеих ногах разворот в сторону задней ноги. &a) Распределение веса на подушечке задней ноги и пятке передней ноги при плоских стопах. Стопы раскрещиваются и заканчивают в параллельной позиции, сомкнутой или с небольшим расстоянием. &b) Распределение веса на подушечке задней ноги и подушечке передней ноги при плоских стопах. Стопы раскрещиваются и заканчивают в параллельной позиции, вперёд или вперёд и перекрёстно.",
+    "marker": "drehungen"
+  },
+  {
+    "name": "Spot Turn",
+    "content": "Inside Turn über zwei Schritte verteilt. Erster Schritt vw bis zu 1/2 gedreht. Zweiter Schritt am Platz belastet.&&&Inside Turn, распределённый на два шага. Первый шаг вперёд с разворотом до 1/2. Второй шаг на месте с переносом веса.",
+    "marker": "drehungen"
+  },
+  {
+    "name": "Three Step Turn",
+    "content": "Outside Turn und Inside Turn im Wechsel. Drei Schritte, auf einer Linie, nach rechts oder links gedreht. Bemerkung Die Drehung wird über mehrere Schritte verteilt. Die Anzahl der Schritte findet sich im \"Namen\". So wird z.B. eine \"Four Step Turn\" über vier Schritte gedreht.&&&Outside Turn и Inside Turn поочерёдно. Три шага по одной линии, с поворотом вправо или влево. Примечание Вращение распределяется на несколько шагов. Количество шагов содержится в «названии». Так, например, «Four Step Turn» выполняется за четыре шага.",
+    "marker": "drehungen"
+  },
+  {
+    "name": "Touch Turn",
+    "content": "Outside Turn über mehrere Schritte verteilt. Die Touch Turn kann mit dem LF nach links oder mit dem RF nach rechts gedreht werden. &RHM Aktion &LF am Platz RF löst sich vom Boden &RF Tap neben LF & LF dreht am Platz nach links und RF löst sich vom Boden &RF Tap neben LF &LF dreht am Platz nach links und RF löst sich vom Boden & Tap neben LF &LF dreht am Platz nach links und RF löst sich vom Boden& Bemerkung: Es kann mit dem Tap begonnen werden. Der Tap kann durch einen Stomp (Stomp Volta) oder Point ersetzt werden.&&&Outside Turn, распределённый на несколько шагов. Touch Turn можно выполнять с ЛФ влево или с ПФ вправо. &RHM Aktion &LF на месте RF отрывается от пола RF &Tap рядом с LF & LF вращается на месте влево и RF отрывается от пола RF &Tap рядом с LF& LF вращается на месте влево и RF отрывается от пола & Tap рядом с LF &LF вращается на месте влево и RF отрывается от пола &Примечание: Можно начинать с Tap. Tap можно заменить на Stomp (Stomp Volta) или Point.",
+    "marker": "drehungen"
+  },
+  {
+    "name": "Pas de Bourrée gedreht",
+    "content": "Inside Turn über drei Schritte verteilt. In der Salsa Szene auch Hook Turn genannt. Kann mit dem RF nach rechts oder mit dem LF nach links gedreht werden. &RHM Aktion& LF kreuzt hinter RF& RF sw (weit) mit Teilgewicht &LF diag. vw &Bemerkung: Die Drehung sollte mit dem ersten Schritt eingeleitet werden. Je nach Drehungsumfang mehr oder weniger stark.&&&Inside Turn, распределённый на три шага. В сальса-сцене также называется Hook Turn. Может выполняться с ПФ вправо или с ЛФ влево.& RHM Aktion &LF пересекает сзади RF &RF sw (широко) с частичным весом &LF диагонально вперёд &Примечание: Вращение следует начинать с первого шага. В зависимости от объёма поворота — сильнее или слабее.",
+    "marker": "drehungen"
+  },
+  {
+    "name": "Seitschritt",
+    "content": "Die Festgelegten Schrittkombinationen können wahlweise mit LF oder RF beginnen. Auch als Step Touch oder Single Step bekannt. RHM Aktion& LF sw &2 RF Tap &3 RF sw &4 LF Tap &a) Je nach Anwendung kann mit Schritt 2 begonnen werden. (Touch Step) &b) Der Tap kann durch verschiedene Aktionen ersetzt werden. Siehe unter Fuß und Bein. &c) Der Tap kann durch einen Rock-Step rw ersetzt werden. Rhythmus Möglichkeiten: Zählweise Schlagwerte Schritt, Tap 2 Schritt, Rück, Platz 1/2 1/2 Schritt, Rück, Platz Schritt, Rück, Platz 1 a 2 3/4 1/4 6.2.&&&Установленные комбинации шагов могут по выбору начинаться с ЛФ или ПФ. Также известен как Step Touch или Single Step. RHM Aktion &ЛФ вбок &2 ПФ Tap &3 ПФ вбок 4 ЛФ Tap &a) В зависимости от применения можно начинать со шага 2. (Touch Step) &b) Tap может быть заменён различными действиями. См. под Фут и Бейн. &c) Tap может быть заменён Rock-Step назад. Возможности ритма: Способ счета Доли Шаг, Tap 2 Шаг, назад, место 1/2 1/2 Шаг, назад, место Шаг, назад, место 1 a 2 3/4 1/4 6.2.",
+    "marker": "schrittkombinationen"
+  },
+  {
+    "name": "Chasse",
+    "content": "Auch als Double Step bekannt. RHM Aktion LF sw RF schl. LF sw RF Tap 5-8 wie 1-4. mit dem RF begonnen &a) Der Tap kann durch verschiedene Aktionen ersetzt werden. Siehe unter Fuß und Bein. &b) Der Tap kann durch einen Rock-Step rw ersetzt werden. Rhythmus Möglichkeiten siehe unter Seitschritt. &c) Offenes Chasse: Schritt 2 und 6 (statt zu schließen) vorwärts überkreuz oder rückwärts überkreuz. Siehe auch 6.4. Grapevine. d) Es wird empfohlen, die Chasses vorwärts oder rückwärts im Durchlaufen zu unterrichten. Bemerkung Ein \"Tripple Step\" ist ein Chasse (seit, schl., seit) mit verändertem Rhythmus. Der Tripple Step kann in der Musik auf 1, 2, 3, oder 4 begonnen werden. &a) gerade: Schlagwerte 1/2 1/2 1 &b) ungerade: Schlagwerte 3/4 1/4 1.&&&Также известен как Double Step. RHM Aktion ЛФ вбок ПФ закрыть. ЛФ вбок ПФ Tap 5-8 как 1-4, начиная с ПФ. &a) Tap может быть заменён различными действиями. См. под Фут и Бейн. &b) Tap может быть заменён Rock-Step назад. Возможности ритма см. под Seitschritt. &c) Открытое Chasse: шаг 2 и 6 (вместо закрытия) вперёд с перекрёстом или назад с перекрёстом. См. также 6.4. Grapevine. &d) Рекомендуется обучать chasses вперёд или назад в прохождении.&Примечание: Tripple Step — это Chasse (вбок, закрыть, вбок) с изменённым ритмом. Tripple Step может начинаться в музыке на 1, 2, 3 или 4. &a) чётный: доли 1/2 1/2 1 &b) нечётный: доли 3/4 1/4 1.",
+    "marker": "schrittkombinationen"
+  },
+  {
+    "name": "Hip Rocks",
+    "content": "Bei den Hip Rocks stehen die Füße in leichtem Abstand nebeneinander oder in Schrittposition. &a) Single Rock Die Hüften werden im gleichmäßigen Rhythmus mit Gewichtsübertragung von einem Bein auf das andere von links nach rechts bewegt. &b) Double Rock Die Hüften werden mit Gewichtsübertragung von einem Bein auf das andere 2mal nach links und 2mal nach rechts bewegt, Rhythmus 1+2 3+4.&&&При Hip Rocks стопы стоят на небольшом расстоянии рядом друг с другом или в шаговой позиции. &a) Single Rock Бёдра равномерно перемещаются с переносом веса с одной ноги на другую слева направо. &b) Double Rock Бёдра с переносом веса с одной ноги на другую двигаются 2 раза влево и 2 раза вправо, ритм 1+2 3+4.",
+    "marker": "schrittkombinationen"
+  },
+  {
+    "name": "Grapevine",
+    "content": "(Offenes Chasse seitwärts mit kreuzen) &RHM Aktion &LF sw &2 RF hinter LF kreuzen &3 LF sw &4 RF Tap oder Stomp zu LF 5-8 wie 1-4 mit dem RF begonnen &Bemerkung: Grapevine kann auch mit Schritt 2 beginnen und ändert sich dann hinterkreuzen - seit - vorkreuzen - Tap&&&(Открытое Chasse в сторону с перекрещиванием) &RHM Aktion& ЛФ вбок &2 ПФ перекрещивается сзади ЛФ&3 ЛФ вбок& 4 ПФ Tap или Stomp к ЛФ& 5-8 как 1-4, начиная с ПФ &Примечание: Grapevine может также начинаться со шага 2 и тогда меняется на перекрёст сзади - вбок - перекрёст спереди - Tap",
+    "marker": "schrittkombinationen"
+  },
+  {
+    "name": "V-Step",
+    "content": "Kann auch mit Schritt 3 beginnen. &RHM Aktion &LF breitspurig vw &RF breitspurig vw &LF schmalspurig rw &RF schl, rw zum LF&&&Может также начинаться со шага 3. &RHM Aktion &ЛФ широко вперёд &ПФ широко вперёд &ЛФ узко назад &ПФ закрыть, назад к ЛФ",
+    "marker": "schrittkombinationen"
+  },
+  {
+    "name": "4er Box",
+    "content": "Die Box ist auch unter den Namen Coca Rola bekannt. &RHM Aktion &LF vor RF kreuzen &RF rw &LF sw &RF vw Kann auch mit RF beginnen.&&&Бокс также известен под названием Coca Rola. &RHM Aktion &ЛФ перекрещивается перед ПФ& ПФ назад &ЛФ вбок &ПФ вперёд &Также может начинаться с ПФ.",
+    "marker": "schrittkombinationen"
+  },
+  {
+    "name": "6er Box",
+    "content": "RHM Aktion &LF vor RF kreuzen &2 RF sw &3 (4) LF rw &5 RF hinter LF kreuzen &6 LF sw 7 (8) RF vw &Kann auch mit RF beginnen.&&&RHM Aktion &ЛФ перекрещивается перед ПФ &2 ПФ вбок 3 (4) ЛФ назад &5 ПФ перекрещивается сзади ЛФ &6 ЛФ вбок &7 (8) ПФ вперёд Также может начинаться с ПФ.",
+    "marker": "schrittkombinationen"
+  },
+  {
+    "name": "Lunge",
+    "content": "RHM Aktion &1 LF sw mit Teilgewicht und leichtem Einfedern &2 LF schl. &3 RF sw mit Teilgewicht und leichtem Einfedern 4 RF schl.& Kann auch mit Schritt 2 beginnen. Auch im Rhythmus 1+2+3+4+ oder +1+2+3+4. &Bemerkung: Den Begriff Lunge gibt es als Bewegung und als Position siehe 4.2.P.3. Lunge/Lunge Point.&&&RHM Aktion &1 ЛФ вбок с частичным весом и лёгким пружинением &2 ЛФ закрыть &3 ПФ вбок с частичным весом и лёгким пружинением &4 ПФ закрыть Также может начинаться со шага &2. Также в ритме 1+2+3+4+ или +1+2+3+4. &Примечание: Термин Lunge существует как движение и как позиция, см. 4.2.P.3. Lunge/Lunge Point.",
+    "marker": "schrittkombinationen"
+  },
+  {
+    "name": "Jumping Jack",
+    "content": "Auch als \"Hampelmann\" bekannt. Kann auch mit Schritt 2 beginnen. RHM Aktion in einen Split (Grätsche) springen 2 in eine geschlossene Position springen&&&Также известен как «Hampelmann». Может также начинаться со шага 2. RHM Aktion прыгнуть в Split (разножку) 2 прыгнуть в закрытую позицию.",
+    "marker": "schrittkombinationen"
+  },
+  {
+    "name": "Criss Cross",
+    "content": "Kann auch mit Schritt 2 beginnen. RHM Aktion &1 in einen Split (Grätsche) springen &2 in eine gekreuzte Position springen&&&Может также начинаться со шага 2. RHM Aktion &1 прыгнуть в Split (разножку) &2 прыгнуть в перекрещенную позицию.",
+    "marker": "schrittkombinationen"
+  },
+  {
+    "name": "Pas de Bourrée",
+    "content": "Es gibt verschiedene Möglichkeiten: Rück &RHM Aktion &LF kreuzt hinter &RF sw (weit) mit Teilgewicht &LF diag. vw Vor &RHM Aktion &LF kreuzt vor RF sw (weit) mit Teilgewicht 2 LF diag. vw &Bemerkung: Die Bewegung ist einem \"durchgelaufenen Botafogo\" ähnlich. Parallel Wird auch Twinkle genannt. &RHM Aktion &LF rw RF schl. &2 LF vw Siehe auch 5.8. Pas de Bourrée gedreht.&&&Есть разные варианты: Назад &RHM Aktion &ЛФ пересекает сзади &ПФ широко вбок с частичным весом &ЛФ диагонально вперёд Вперёд &RHM Aktion &ЛФ пересекает спереди &ПФ широко вбок с частичным весом &2 ЛФ диагонально вперёд &Примечание: Движение похоже на «проходящий Botafogo». Параллельно Также называется Twinkle. &RHM Aktion &ЛФ назад &ПФ закрыть 2 &ЛФ вперёд См. также 5.8. Pas de Bourrée gedreht.",
+    "marker": "schrittkombinationen"
+  }
+]

@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { IsoElemente } from "@/app/iso/helpers/el";
 import { AnimatePresence, motion } from "framer-motion";
 import ItemButton from "@/app/iso/components/ItemButton";
 
@@ -8,7 +7,9 @@ export default function List() {
   const [isActive, setisActive] = useState<string>("");
   const [isMarker, setisMarker] = useState<string>("");
   const [selectedMobileArea, setSelectedMobileArea] = useState<string>("fuss");
-
+  const [elements, setelements] = useState<Element[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   function formatContent(raw: string): string {
     return raw.replace(/\s*\&\s*/g, "\n");
   }
@@ -26,14 +27,43 @@ export default function List() {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, []);
+  useEffect(() => {
+    let cancelled = false;
 
+    async function loadTanzen() {
+      try {
+        const res = await fetch("/data/iso.json");
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data: Element[] = await res.json();
+        if (!cancelled) {
+          setelements(data);
+          // если текущий tieIem не валиден, можно сразу выбрать первый
+          if (!data.find((t) => t.name === isActive) && data.length > 0) {
+            setisActive(data[0].name);
+          }
+        }
+      } catch (e: any) {
+        if (!cancelled) setError(e.message ?? "Fehler beim Laden");
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+
+    loadTanzen();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
   // Scroll to details on mobile when an item is selected
   useEffect(() => {
     if (isActive && window.innerWidth < 768) {
       const detailsElement = document.getElementById("details-panel");
       if (detailsElement) {
         setTimeout(() => {
-          detailsElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          detailsElement.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+          });
         }, 100);
       }
     }
@@ -78,8 +108,9 @@ export default function List() {
 
         {/* Mobile buttons list */}
         <div className="flex flex-wrap gap-2 mt-4 mb-2">
-          {IsoElemente.filter((it) => it.marker === selectedMobileArea).map(
-            (item) => (
+          {elements
+            .filter((it) => it.marker === selectedMobileArea)
+            .map((item) => (
               <ItemButton
                 key={`${item.marker}-${item.name}`}
                 isActive={isActive}
@@ -88,8 +119,7 @@ export default function List() {
                 setisMarker={setisMarker}
                 item={item}
               />
-            ),
-          )}
+            ))}
         </div>
       </div>
 
@@ -102,16 +132,18 @@ export default function List() {
             </h3>
 
             <div className="flex flex-wrap gap-1.5 mt-1">
-              {IsoElemente.filter((it) => it.marker === i).map((item) => (
-                <ItemButton
-                  key={`${item.marker}-${item.name}`}
-                  isActive={isActive}
-                  setisActive={setisActive}
-                  isMarker={isMarker}
-                  setisMarker={setisMarker}
-                  item={item}
-                />
-              ))}
+              {elements
+                .filter((it) => it.marker === i)
+                .map((item) => (
+                  <ItemButton
+                    key={`${item.marker}-${item.name}`}
+                    isActive={isActive}
+                    setisActive={setisActive}
+                    isMarker={isMarker}
+                    setisMarker={setisMarker}
+                    item={item}
+                  />
+                ))}
             </div>
           </React.Fragment>
         ))}
@@ -124,7 +156,7 @@ export default function List() {
       >
         <AnimatePresence initial={false} mode="wait">
           {isActive ? (
-            IsoElemente.map((item) => {
+            elements.map((item) => {
               const isCurrentActive =
                 isActive === item.name && isMarker === item.marker;
 
@@ -149,7 +181,7 @@ export default function List() {
             })
           ) : (
             <div className="flex items-center justify-center h-[150px] text-slate-500 text-sm md:text-base italic">
-              Выберите элемент для просмотра описания...
+              Select an item to view its description...
             </div>
           )}
         </AnimatePresence>
