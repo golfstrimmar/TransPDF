@@ -24,6 +24,7 @@ const Navbar: React.FC = () => {
     { title: "Tänzen", path: "/adtv" },
     { title: "Elemente", path: "/elemente" },
     { title: "Iso", path: "/iso" },
+    { title: "Musik", path: "/musik" },
   ];
 
   useEffect(() => {
