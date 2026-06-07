@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Trans from "@/app/trans/Trans";
-import ExportToDropbox from "../app/trans/ExportToDropbox";
-import Pdf from "../app/trans/Pdf";
-import ImageOcr from "../app/trans/ImageOcr";
+import ExportToDropbox from "./trans/ExportToDropbox";
+import Pdf from "./trans/Pdf";
+import ImageOcr from "./trans/ImageOcr";
 
 type PageItem = {
   pageNumber: number;
