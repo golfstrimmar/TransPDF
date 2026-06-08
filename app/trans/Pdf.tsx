@@ -41,39 +41,43 @@ export default function Pdf({ pages, setPages }) {
 
   return (
     <div className="">
-      <h3 className="text-2xl font-semibold ">PDF → текст (DE → RU)</h3>
+      <h3 className="!text-sm lg:!text-2xl font-semibold ">
+        PDF → текст (DE → RU)
+      </h3>
       <form
         onSubmit={handleSubmit}
-        className="flex items-center gap-4 border border-slate-800 rounded-lg p-4 bg-slate-900 mt-2"
+        className=" flex flex-col w-full lg:flex-row items-center gap-4 border border-slate-800 rounded-lg p-4 bg-slate-900 mt-2"
       >
         <input
           ref={fileInputRef}
           type="file"
           name="file"
           accept="application/pdf"
-          className="text-sm file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:bg-slate-700 file:text-slate-50 hover:file:bg-slate-600 transition-all duration-200  cursor-pointer"
+          className="text-sm file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:bg-slate-700 file:text-slate-50 hover:file:bg-slate-600 transition-all duration-200  cursor-pointer w-full"
         />
-        <button
-          type="submit"
-          disabled={loading}
-          className="btn btn-emerald  px-1 !text-[14px]
+        <div className="flex items-center gap-2">
+          <button
+            type="submit"
+            disabled={loading}
+            className="btn btn-emerald  p-1  !text-[14px]
           "
-        >
-          {loading ? <Spinner /> : "Загрузить"}
-        </button>
-        <button
-          type="submit"
-          disabled={loading}
-          className="btn btn-red"
-          onClick={(e) => {
-            e.preventDefault();
-            setPages([]);
-            setError(null);
-            if (fileInputRef.current) fileInputRef.current.value = "";
-          }}
-        >
-          <RemoveIcon width={16} height={16} />
-        </button>
+          >
+            {loading ? <Spinner /> : "Загрузить"}
+          </button>
+          <button
+            type="submit"
+            disabled={loading}
+            className="btn btn-red p-1"
+            onClick={(e) => {
+              e.preventDefault();
+              setPages([]);
+              setError(null);
+              if (fileInputRef.current) fileInputRef.current.value = "";
+            }}
+          >
+            <RemoveIcon width={16} height={16} />
+          </button>
+        </div>
       </form>
       {error && <p className="text-sm text-red-400">{error}</p>}
     </div>

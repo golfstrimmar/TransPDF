@@ -16,20 +16,16 @@ export default function HomePage() {
   const [pages, setPages] = useState<PageItem[]>([]);
 
   return (
-    <main className="pt-16 min-h-screen bg-slate-950 text-slate-50 p-6">
-      <div className="grid grid-cols-2 mb-4">
+    <div className="pt-[60px] !max-w-[100vw]  bg-slate-950 text-slate-50 p-2">
+      <div className="flex flex-col lg:flex-row justify-center mb-4 gap-4">
         {/*------------------------------------*/}
-        <div className="mx-auto  space-y-6">
-          <Pdf pages={pages} setPages={setPages} />
-        </div>
+        <Pdf pages={pages} setPages={setPages} />
         {/*------------------------------------*/}
-        <div className="mx-auto  space-y-6">
-          <ImageOcr setPages={setPages} />
-        </div>
+        <ImageOcr setPages={setPages} />
       </div>
       {/*------------------------------------*/}
       {pages.length > 0 && <ExportToDropbox pages={pages} />}
       <Trans pages={pages} setPages={setPages} />
-    </main>
+    </div>
   );
 }

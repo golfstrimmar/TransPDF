@@ -39,14 +39,15 @@
 }
 
 .navigation {
-    background: var(--navy-950);
+    background: var(--navy-750);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 30px;
+    gap: 10px;
     align-items: center;
-    padding: 0 25px;
+    justify-content: center;
+    padding: 5px 25px;
     border-radius: 5px;
     li a {
         white-space: nowrap;
@@ -55,7 +56,7 @@
 
 @media (max-width: 900px) {
     .navigation {
-        padding: var(--token-02);
+        padding: 10px 0;
         width: 100%;
         border: none;
         border-radius: 0;
@@ -67,7 +68,7 @@
 
 .navigationItem {
     position: relative;
-    padding: var(--token-08) var(--token-16);
+    padding: 5px 0px;
     border-radius: var(--token-32);
     font-size: var(--font-size-medium);
     font-weight: 500;
@@ -82,10 +83,11 @@
 .indicator {
     position: absolute;
     background: #5a609d;
-    width: 120%;
+    width: 105%;
     height: 100%;
     top: 0;
-    left: -4px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
     padding: 5px;
 }

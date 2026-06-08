@@ -86,48 +86,42 @@ export default function Trans({ pages, setPages }) {
         </div>
       )}
 
-      {pages.length > 0 && (
-        <div className="space-y-6">
-          {pages.map((p) => (
-            <div
-              key={p.pageNumber}
-              className="grid gap-4 border border-slate-800 rounded-lg p-4 bg-slate-900 md:grid-cols-2"
-            >
-              {/* ORIGINAL */}
-              <div className="space-y-2">
-                <h3 className="text-sm font-semibold text-slate-200">
-                  Страница {p.pageNumber}
-                </h3>
+      {pages.length > 0 &&
+        pages.map((p) => (
+          <div
+            key={p.pageNumber}
+            className="grid gap-4 grid-cols-1 lg:grid-cols-2 border border-slate-800 rounded-lg p-4 bg-slate-900 "
+          >
+            {/* ORIGINAL */}
+            <div className="">
+              <h3 className="text-sm font-semibold text-slate-200">
+                Страница {p.pageNumber}
+              </h3>
 
-                <pre
-                  className={`cursor-pointer whitespace-pre-wrap text-sm text-slate-100 ${
-                    copiedPage === p.pageNumber ? "bg-green-500" : ""
-                  }`}
-                  onClick={async () => {
-                    await navigator.clipboard.writeText(p.original);
-                    setCopiedPage(p.pageNumber);
-                    setTimeout(() => setCopiedPage(null), 1000);
-                  }}
-                >
-                  {p.original}
-                </pre>
-              </div>
-
-              {/* TRANSLATED */}
-              <div
-                className="space-y-2 border-l border-slate-700 pl-4 text-[14px] lh-0"
-                style={{ lineHeight: "1" }}
+              <pre
+                className={`cursor-pointer whitespace-pre-wrap text-sm text-slate-100 ${
+                  copiedPage === p.pageNumber ? "bg-green-500" : ""
+                }`}
+                onClick={async () => {
+                  await navigator.clipboard.writeText(p.original);
+                  setCopiedPage(p.pageNumber);
+                  setTimeout(() => setCopiedPage(null), 1000);
+                }}
               >
-                <textarea
-                  value={p.translated || ""}
-                  onChange={(e) => changeHandler(e, p)}
-                  className="w-full min-h-[150px] bg-slate-500 text-black p-2 rounded"
-                />
-              </div>
+                {p.original}
+              </pre>
             </div>
-          ))}
-        </div>
-      )}
+
+            {/* TRANSLATED */}
+            <div className="   text-[14px] lh-0" style={{ lineHeight: "1" }}>
+              <textarea
+                value={p.translated || ""}
+                onChange={(e) => changeHandler(e, p)}
+                className="w-full !min-h-[1050px] bg-slate-500 text-black p-2 rounded"
+              />
+            </div>
+          </div>
+        ))}
     </div>
   );
 }

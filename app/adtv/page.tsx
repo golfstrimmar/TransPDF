@@ -65,10 +65,10 @@ export default function ADTF() {
 
   // ====>====>====>====>====>====>====>====>====>====>====>====>====>====>====>
   return (
-    <section className="bg-[var(--slate)] w-[100vw] min-h-[100vh] pt-[100px] pb-12 text-[var(--slate-300)] overflow-x-hidden">
-      <div className="container mx-auto px-4">
+    <section className="bg-[var(--slate)] w-[100vw] min-h-[100vh] pt-[60px] pb-12 text-[var(--slate-300)] overflow-x-hidden">
+      <div className="container mx-auto ">
         {/* Title */}
-        <h2 className="text-center text-2xl md:text-3xl mb-8 tracking-wide !whitespace-normal">
+        <h2 className="text-center !text-[24px] mb-8 tracking-wide !whitespace-normal">
           Tänzen (ADTV)
         </h2>
 
@@ -132,7 +132,7 @@ export default function ADTF() {
           {/* DETAIL PANEL: Displays chosen dance properties */}
           <div
             id="details-panel"
-            className="p-4 md:p-6 border border-slate-800 rounded-2xl bg-[#1e293b]/20 min-h-[300px] flex flex-col scroll-mt-24"
+            className="p-2 md:p-6 border border-slate-800 rounded-2xl bg-[#1e293b]/20 min-h-[300px] flex flex-col scroll-mt-24"
           >
             <AnimatePresence initial={false} mode="wait">
               {tieIem ? (

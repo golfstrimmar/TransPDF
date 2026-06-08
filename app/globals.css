@@ -16,7 +16,7 @@ body {
     /*// outline: 1px solid #4164ff;*/
     /*// max-width: 1200px;*/
     /*// width: 100% !important;*/
-    width: calc(100vw - 40px);
+    width: calc(100vw - 20px);
     max-width: 100% !important;
     margin: 0 10px !important;
     position: relative;
