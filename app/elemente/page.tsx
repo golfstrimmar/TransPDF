@@ -1,4 +1,5 @@
 import List from "@/app/elemente/components/List";
+import elData from "@/public/data/el.json";
 
 export default function Elemente() {
   return (
@@ -6,10 +7,10 @@ export default function Elemente() {
       className="container mx-auto px-4 pb-12"
       style={{ paddingTop: "60px" }}
     >
-      <h2 className="text-center !text-[24px]   mb-6 tracking-wide !whitespace-normal">
+      <h2 className="text-center !text-[24px] mb-6 tracking-wide !whitespace-normal">
         Elemente
       </h2>
-      <List />
+      <List initialElements={elData} />
     </div>
   );
 }

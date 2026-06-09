@@ -8,7 +8,8 @@
     "zahl": "L L S S",
     "schlagwerte": "2 2 1 1",
     "elemente": "Pandel seitwärts",
-    "figuren": "Pendelschritt nach links und nach rechts & Grundschritt"
+    "figuren": "Pendelschritt nach links und nach rechts & Grundschritt",
+    "images": "/images/IMG_20260609_134625.jpg"
   },
   {
     "name": "Foxtrott",
@@ -19,7 +20,8 @@
     "zahl": "L L S S",
     "schlagwerte": "2 2 1 1",
     "elemente": "Platzschritte &  Wiegedrehungen nach rechts und lins",
-    "figuren": "Grundschritt am Platz, vorwärts und rückwärts & Wiege-Rechtsdrehung  & Wiege-Linksdrehung"
+    "figuren": "Grundschritt am Platz, vorwärts und rückwärts & Wiege-Rechtsdrehung  & Wiege-Linksdrehung",
+    "images": "/images/IMG_20260609_134625.jpg"
   },
   {
     "name": "Langsamer Walzer",
@@ -30,7 +32,8 @@
     "zahl": "1 2 3",
     "schlagwerte": "1 1 1",
     "elemente": "Geschlossene 3-Schritt-Folge",
-    "figuren": "Rechtsdrehung am Platz, vorwärts und rückwärts &  Linksdrehung am Platz, vorwärts und rückwärts"
+    "figuren": "Rechtsdrehung am Platz, vorwärts und rückwärts &  Linksdrehung am Platz, vorwärts und rückwärts",
+    "images": ""
   },
   {
     "name": "Wiener Walzer",
@@ -41,7 +44,8 @@
     "zahl": "1 2 3",
     "schlagwerte": "1 1 1",
     "elemente": "Pendel & Geschlossene 3-Schritt-Folge",
-    "figuren": "Pendelschritt nach rechts, nach links, vorwärts und rückwärts  &  Swing-Out, alle Formen  &  Swing-In, alle Formen &  Flirt & Pull and Push & Rechtsdrehung am Platz   vorwärts und rückwärts & Linksdrehung am Platz, vorwärts und rückwärts & Progressives Damensolo nach rechts"
+    "figuren": "Pendelschritt nach rechts, nach links, vorwärts und rückwärts  &  Swing-Out, alle Formen  &  Swing-In, alle Formen &  Flirt & Pull and Push & Rechtsdrehung am Platz   vorwärts und rückwärts & Linksdrehung am Platz, vorwärts und rückwärts & Progressives Damensolo nach rechts",
+    "images": ""
   },
   {
     "name": "Tango",
@@ -52,7 +56,8 @@
     "zahl": "L L bzw. S S L",
     "schlagwerte": "1 1 bzw. 1/2 1/2 1 (2 2 bzw. 1 1 2)",
     "elemente": "Wiege rückwärts und vorwärts &  Wiegedrehung rückwürts und vorwärts & Geschlossene 3 Schritt Folge &  In Tango kann dieses Element als Abschlusschritt bezeichnet werden.",
-    "figuren": "Gehschritte & Wiegeschritt & Link & Promenade"
+    "figuren": "Gehschritte & Wiegeschritt & Link & Promenade",
+    "images": ""
   },
   {
     "name": "Tango-Argentino",
@@ -63,7 +68,8 @@
     "zahl": "L bzw. S S",
     "schlagwerte": "1 bzw. 1/2 1/2 (2 bzw. 1 1 )",
     "elemente": "",
-    "figuren": "Paso Básico & Variationen zum Paso Básico"
+    "figuren": "Paso Básico & Variationen zum Paso Básico",
+    "images": ""
   },
   {
     "name": "Discofox",
@@ -74,7 +80,8 @@
     "zahl": "1 2 Tap oder S S S",
     "schlagwerte": "1 1 1",
     "elemente": "Gedrehter Schritt & Platzschritte & Tap- Der Tap kann abhängig von der Richtung, in die er gesetzt wird, auf dem Ballen, flach oder auf der Ferze getanzt werden. & 2-Schritt-Drehung",
-    "figuren": "Grundschritt am Platz, vorwärts, rückwärts & Swing-Out, alle Formen & Trennung & Swing-In, alle Formen & Link & Pull and Push &   Rechtsdrehung &   Progressives Damensolo nach rechts & Platzwechsel mit Damensolo nach rechts &  Progressives Damensolo nach links & Platzwechsel mit Damensolo nach links"
+    "figuren": "Grundschritt am Platz, vorwärts, rückwärts & Swing-Out, alle Formen & Trennung & Swing-In, alle Formen & Link & Pull and Push &   Rechtsdrehung &   Progressives Damensolo nach rechts & Platzwechsel mit Damensolo nach rechts &  Progressives Damensolo nach links & Platzwechsel mit Damensolo nach links",
+    "images": ""
   },
   {
     "name": "Boogie Woogie",
@@ -85,7 +92,8 @@
     "zahl": "S S L L oder 1 2 3 4 5 6 ",
     "schlagwerte": "1 1 2 2, 1 1 1 1 1 1",
     "elemente": "Wiege rw&Tap&2-Schritt-Drehung ",
-    "figuren": "4er-Grundschritt& 6er-Grundschritt& Swing-Out, alle Formen& Swing-In, alle Formen& Flirt& Progressives Damensolo nach rechts& Progressives Damensolo nach links"
+    "figuren": "4er-Grundschritt& 6er-Grundschritt& Swing-Out, alle Formen& Swing-In, alle Formen& Flirt& Progressives Damensolo nach rechts& Progressives Damensolo nach links",
+    "images": ""
   },
   {
     "name": "Rock`n`Roll",
@@ -96,7 +104,8 @@
     "zahl": "S S S S S S oder 1 2 3 4 5 6",
     "schlagwerte": "1 1 1 1 1 1",
     "elemente": "Wiege rw&Kick (Flick)&Spin",
-    "figuren": "6er-Grundschritt&Damen-Swing-In& Damen-Swing-Out"
+    "figuren": "6er-Grundschritt&Damen-Swing-In& Damen-Swing-Out",
+    "images": ""
   },
   {
     "name": "Jive",
@@ -118,7 +127,8 @@
     "zahl": "1 2",
     "schlagwerte": "1 1",
     "elemente": "Platzschritte& 2-Schritt-Chasse& Latin Hip (auch Merengue Hip oder Opposite Hip genannt)",
-    "figuren": "Grundschritt am Platz, vorwärts und rückwärts& Chasse nach links und nach rechts& Stationäre Solodrehungen nach rechts und nach links"
+    "figuren": "Grundschritt am Platz, vorwärts und rückwärts& Chasse nach links und nach rechts& Stationäre Solodrehungen nach rechts und nach links",
+    "images": ""
   },
   {
     "name": "Salsa",
@@ -129,7 +139,8 @@
     "zahl": "S S L",
     "schlagwerte": "1 1 2",
     "elemente": "Wiege vw rw & Platzdrehung",
-    "figuren": "Grundschritt New York Style&   Grundschritt Cuban Style&  Stationäres Damensolo nach rechts vorwärts&  Stationäres Damensolo nach rechts seitwärts&  Wischer nach rechts und nach links&  Cross Body Lead"
+    "figuren": "Grundschritt New York Style&   Grundschritt Cuban Style&  Stationäres Damensolo nach rechts vorwärts&  Stationäres Damensolo nach rechts seitwärts&  Wischer nach rechts und nach links&  Cross Body Lead",
+    "images": ""
   },
   {
     "name": "Rumba",
@@ -140,7 +151,8 @@
     "zahl": "L S S",
     "schlagwerte": "2 1 1",
     "elemente": "Platzschritte&  Wiege vw rw & Platzdrehung& Gedrehter Schritt",
-    "figuren": "Grundschritt am Platz, vorwärts und rückwärts& Stationäres Damensolo nach rechts& Promenade nach rechts und nach links& Wischer nach rechts und nach links& Hand zu Hand nach rechts und nach links& Platzdrehung nach rechts und nach links& Stationäres Damensolo nach links& Schulter zu Schulter nach rechts und nach links"
+    "figuren": "Grundschritt am Platz, vorwärts und rückwärts& Stationäres Damensolo nach rechts& Promenade nach rechts und nach links& Wischer nach rechts und nach links& Hand zu Hand nach rechts und nach links& Platzdrehung nach rechts und nach links& Stationäres Damensolo nach links& Schulter zu Schulter nach rechts und nach links",
+    "images": ""
   },
   {
     "name": "Karree-Rumba",
@@ -151,7 +163,8 @@
     "zahl": "L S S",
     "schlagwerte": "2 1 1",
     "elemente": "Geschlossene 3-Schritt-Folge& Kreiseldrehung",
-    "figuren": "Rechtskarree vorwärts und rückwärts &Linkskarree vorwärts und rückwärts &Trennung &Link &Stationäres Damensolo nach rechts"
+    "figuren": "Rechtskarree vorwärts und rückwärts &Linkskarree vorwärts und rückwärts &Trennung &Link &Stationäres Damensolo nach rechts",
+    "images": ""
   },
   {
     "name": "Cha Cha Cha",
@@ -162,7 +175,8 @@
     "zahl": "1 2 3 4+1 oder 2 3 4+1",
     "schlagwerte": "1 1 1 1/2 1/2 1 , 1 1 1/2 1/2 1",
     "elemente": "Platzschritte & 3-Schritt-Chasse & Wiege vw rw &  Platzdrehung",
-    "figuren": "Grundschritt am Platz, vorwärts und rückwärts  & Stationäres Damensolo nach rechts & Promenade nach rechts und nach links & Wischer nach rechts und nach links  & Hand zu Hand nach rechts und nach links & Platzdrehung nach rechts и nach links & Stationäres Damensolo nach links & Schulter zu Schulter nach rechts und nach links"
+    "figuren": "Grundschritt am Platz, vorwärts und rückwärts  & Stationäres Damensolo nach rechts & Promenade nach rechts und nach links & Wischer nach rechts und nach links  & Hand zu Hand nach rechts und nach links & Platzdrehung nach rechts и nach links & Stationäres Damensolo nach links & Schulter zu Schulter nach rechts und nach links",
+    "images": ""
   },
   {
     "name": "Disco-Samba",
@@ -184,7 +198,8 @@
     "zahl": "1e 2",
     "schlagwerte": "3/4 1/4 1",
     "elemente": "Platzschritte& Latein-Kreuz (in der Salsa auch Hook genannt)&Fußrutschen&Platzvolta&Ball Change",
-    "figuren": "Seitschritt nach rechts und nach links &   Rechtsgrundschritt vorwärts und rückwärts &   Linksgrundschritt vorwärts und rückwärts &   Swing-Out, alle Formen &   Trennung &   Swing-In, alle Formen &   Link &   Flirt &   Pull and Push &   Wischer nach rechts und nach links &   Promenade mit dem linken und dem rechten Fuß &   Langsames stationäres Damensolo nach rechts und nach links &   Stationäres Damensolo nach rechts"
+    "figuren": "Seitschritt nach rechts und nach links &   Rechtsgrundschritt vorwärts und rückwärts &   Linksgrundschritt vorwärts und rückwärts &   Swing-Out, alle Formen &   Trennung &   Swing-In, alle Formen &   Link &   Flirt &   Pull and Push &   Wischer nach rechts und nach links &   Promenade mit dem linken und dem rechten Fuß &   Langsames stationäres Damensolo nach rechts und nach links &   Stationäres Damensolo nach rechts",
+    "images": ""
   },
   {
     "name": "Slowfoxtrott",
@@ -195,7 +210,8 @@
     "zahl": "L S S",
     "schlagwerte": "2 1 1",
     "elemente": "",
-    "figuren": ""
+    "figuren": "",
+    "images": ""
   },
   {
     "name": "Passo Doble ( französischer Stil)",
@@ -206,7 +222,8 @@
     "zahl": "1 2",
     "schlagwerte": "1 1",
     "elemente": "2-Schritt-Chasse&2-Schritt-Drehung&Wiege&Appell",
-    "figuren": "Grundschritt &  Promenade &  Linksdrehung &  Сара"
+    "figuren": "Grundschritt &  Promenade &  Linksdrehung &  Сара",
+    "images": ""
   },
   {
     "name": "Passo Doble (internationaler)",
@@ -217,7 +234,8 @@
     "zahl": "1 2",
     "schlagwerte": "1 1",
     "elemente": "2-Schritt-Chasse&2-Schritt-Drehung&Wiege&Appell",
-    "figuren": "Grundschritt am Platz, vorwärts und rückwärts &  Chasse nach rechts &   Chasse nach links &   Chasse &   Attacke &   Promenadenlink &   Trennung"
+    "figuren": "Grundschritt am Platz, vorwärts und rückwärts &  Chasse nach rechts &   Chasse nach links &   Chasse &   Attacke &   Promenadenlink &   Trennung",
+    "images": ""
   },
   {
     "name": "Quickstep",
@@ -228,6 +246,7 @@
     "zahl": "L S S L",
     "schlagwerte": "2 1 1 2",
     "elemente": "",
-    "figuren": ""
+    "figuren": "",
+    "images": ""
   }
 ]

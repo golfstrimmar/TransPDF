@@ -1,4 +1,5 @@
 import List from "@/app/iso/components/List";
+import isoData from "@/public/data/iso.json";
 
 export default function Elemente() {
   return (
@@ -9,7 +10,7 @@ export default function Elemente() {
       <h2 className="text-center !text-[24px] mb-6 tracking-wide !whitespace-normal">
         Festgelegte Techniken
       </h2>
-      <List />
+      <List initialElements={isoData} />
     </div>
   );
 }

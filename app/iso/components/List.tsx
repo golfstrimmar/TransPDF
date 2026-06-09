@@ -3,13 +3,23 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import ItemButton from "@/app/iso/components/ItemButton";
 
-export default function List() {
-  const [isActive, setisActive] = useState<string>("");
-  const [isMarker, setisMarker] = useState<string>("");
+export type IsoElement = {
+  name: string;
+  marker: string;
+  content: string;
+  [key: string]: any;
+};
+
+interface ListProps {
+  initialElements: IsoElement[];
+}
+
+export default function List({ initialElements }: ListProps) {
+  const [isActive, setisActive] = useState<string>(initialElements[0]?.name || "");
+  const [isMarker, setisMarker] = useState<string>(initialElements[0]?.marker || "");
   const [selectedMobileArea, setSelectedMobileArea] = useState<string>("fuss");
-  const [elements, setelements] = useState<Element[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [elements] = useState<IsoElement[]>(initialElements);
+  
   function formatContent(raw: string): string {
     return raw.replace(/\s*\&\s*/g, "\n");
   }
@@ -27,33 +37,7 @@ export default function List() {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, []);
-  useEffect(() => {
-    let cancelled = false;
 
-    async function loadTanzen() {
-      try {
-        const res = await fetch("/data/iso.json");
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data: Element[] = await res.json();
-        if (!cancelled) {
-          setelements(data);
-          // если текущий tieIem не валиден, можно сразу выбрать первый
-          if (!data.find((t) => t.name === isActive) && data.length > 0) {
-            setisActive(data[0].name);
-          }
-        }
-      } catch (e: any) {
-        if (!cancelled) setError(e.message ?? "Fehler beim Laden");
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    }
-
-    loadTanzen();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
   // Scroll to details on mobile when an item is selected
   useEffect(() => {
     if (isActive && window.innerWidth < 768) {

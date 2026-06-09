@@ -1,19 +1,25 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-type Element = {
+
+export type Element = {
   name: string;
-  [key: string]: string;
+  [key: string]: any;
 };
 
-export default function List() {
+interface ListProps {
+  initialElements: Element[];
+}
+
+export default function List({ initialElements }: ListProps) {
   const [isActive, setisActive] = useState<string>(
-    "Achsendrehung (paarweise getanzt)",
+    initialElements.find((t) => t.name === "Achsendrehung (paarweise getanzt)")
+      ? "Achsendrehung (paarweise getanzt)"
+      : (initialElements[0]?.name || "")
   );
   const [selectedMobileArea, setSelectedMobileArea] = useState<string>("einz");
-  const [elements, setelements] = useState<Element[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [elements] = useState<Element[]>(initialElements);
+  
   function formatContent(raw: string): string {
     return raw.replace(/\s*\&\s*/g, "\n\n");
   }
@@ -33,33 +39,6 @@ export default function List() {
     }
   }, [isActive]);
 
-  useEffect(() => {
-    let cancelled = false;
-
-    async function loadTanzen() {
-      try {
-        const res = await fetch("/data/el.json");
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data: Element[] = await res.json();
-        if (!cancelled) {
-          setelements(data);
-          // если текущий tieIem не валиден, можно сразу выбрать первый
-          if (!data.find((t) => t.name === isActive) && data.length > 0) {
-            setisActive(data[0].name);
-          }
-        }
-      } catch (e: any) {
-        if (!cancelled) setError(e.message ?? "Fehler beim Laden");
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    }
-
-    loadTanzen();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
 
   const categories = [
     { key: "einz", label: "1 Schritt" },
