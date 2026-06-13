@@ -79,7 +79,7 @@ export default function AdtvContent({ initialTanzen }: AdtvContentProps) {
       </div>
 
       {/* DESKTOP VIEW: Sidebar navigation */}
-      <div className="hidden md:flex flex-col gap-1.5 max-h-[75vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-transparent">
+      <div className="hidden md:flex flex-col gap-1.5 ] pr-2 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-transparent">
         {tanzen.map((item, index) => {
           const name = String(item["name" as keyof typeof item]);
           const isActive = tieIem === name;
@@ -201,7 +201,11 @@ export default function AdtvContent({ initialTanzen }: AdtvContentProps) {
                           initial={{ scale: 0.95, y: 15 }}
                           animate={{ scale: 1, y: 0 }}
                           exit={{ scale: 0.95, y: 15 }}
-                          transition={{ type: "spring", damping: 25, stiffness: 250 }}
+                          transition={{
+                            type: "spring",
+                            damping: 25,
+                            stiffness: 250,
+                          }}
                           onClick={(e) => e.stopPropagation()}
                           className="w-full max-w-4xl flex flex-col items-center gap-6 my-auto py-8"
                         >
@@ -234,18 +238,20 @@ export default function AdtvContent({ initialTanzen }: AdtvContentProps) {
 
                           {/* Images List (Large, one under another) */}
                           <div className="w-full flex flex-col items-center gap-6">
-                            {item.images.split(/\s*\&\s*/).map((imgUrl, idx) => {
-                              const cleanUrl = imgUrl.trim();
-                              if (!cleanUrl) return null;
-                              return (
-                                <img
-                                  key={idx}
-                                  src={cleanUrl}
-                                  alt={`${name} diagram ${idx + 1}`}
-                                  className="w-full rounded-2xl shadow-2xl object-contain border border-slate-850 bg-slate-900/10 max-h-[85vh]"
-                                />
-                              );
-                            })}
+                            {item.images
+                              .split(/\s*\&\s*/)
+                              .map((imgUrl, idx) => {
+                                const cleanUrl = imgUrl.trim();
+                                if (!cleanUrl) return null;
+                                return (
+                                  <img
+                                    key={idx}
+                                    src={cleanUrl}
+                                    alt={`${name} diagram ${idx + 1}`}
+                                    className="w-full rounded-2xl shadow-2xl object-contain border border-slate-850 bg-slate-900/10 max-h-[85vh]"
+                                  />
+                                );
+                              })}
                           </div>
                         </motion.div>
                       </motion.div>

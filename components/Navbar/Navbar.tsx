@@ -21,10 +21,11 @@ const Navbar: React.FC = () => {
   //------------------
   const pages = [
     { title: "Home", path: "/" },
-    { title: "Tänzen", path: "/adtv" },
-    { title: "Elemente", path: "/elemente" },
+    { title: "Tänz", path: "/adtv" },
+    { title: "El", path: "/elemente" },
     { title: "Iso", path: "/iso" },
-    { title: "Musik", path: "/musik" },
+    { title: "Mus", path: "/musik" },
+    { title: "Prax", path: "/praxis" },
   ];
 
   useEffect(() => {

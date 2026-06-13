@@ -1,7 +1,8 @@
 import React from "react";
-import AdtvContent, { Tanz } from "@/app/adtv/components/AdtvContent";
+import AdtvContent from "@/app/adtv/components/AdtvContent";
+import { Tanz } from "@/app/praxis/components/Stat";
 import tanzenData from "@/public/data/tanzen.json";
-import Stat from "@/app/adtv/components/Stat";
+
 export default function ADTF() {
   return (
     <section className="bg-[var(--slate)] w-[100vw] min-h-[100vh] pt-[60px] pb-12 text-[var(--slate-300)] overflow-x-hidden">
@@ -12,7 +13,6 @@ export default function ADTF() {
         </h2>
 
         <AdtvContent initialTanzen={tanzenData as Tanz[]} />
-        <Stat initialTanzen={tanzenData as Tanz[]} />
       </div>
     </section>
   );
