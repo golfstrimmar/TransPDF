@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-
+import { ArrowUturnLeftIcon } from "@heroicons/react/24/solid";
 export type Tanz = {
   name: string;
   [key: string]: string;
@@ -15,7 +15,6 @@ export default function AdtvContent({ initialTanzen }: AdtvContentProps) {
   const [tieIem, settieIem] = useState<string>("Blues");
   const [tanzen] = useState<Tanz[]>(initialTanzen);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   function formatContent(raw: string): string {
     return raw.replace(/\s*\&\s*/g, "\n");
   }
@@ -210,30 +209,16 @@ export default function AdtvContent({ initialTanzen }: AdtvContentProps) {
                           className="w-full max-w-4xl flex flex-col items-center gap-6 my-auto py-8"
                         >
                           {/* Header */}
-                          <div className="w-full flex items-center justify-between border-b border-slate-800 pb-4">
-                            <h3 className="text-xl md:text-2xl font-bold text-teal-400 uppercase tracking-wider">
-                              {name} - Figuren & Diagramme
-                            </h3>
+                          <div className="w-full flex items-center gap-4 border-b border-slate-800 pb-4">
                             <button
+                              className="btn btn-empty"
                               onClick={() => setIsModalOpen(false)}
-                              className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 transition-colors cursor-pointer"
-                              aria-label="Close modal"
                             >
-                              <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth="2"
-                                  d="M6 18L18 6M6 6l12 12"
-                                ></path>
-                              </svg>
+                              <ArrowUturnLeftIcon className="w-6 h-6" />
                             </button>
+                            <h3 className="!text-[12px] md:!text-2xl font-bold text-teal-400 uppercase tracking-wider">
+                              {name}
+                            </h3>
                           </div>
 
                           {/* Images List (Large, one under another) */}
