@@ -1,4 +1,5 @@
 "use client";
+import { div } from "framer-motion/m";
 import React, {
   useState,
   useEffect,
@@ -27,9 +28,12 @@ export default function Stat({ initialTanzen }: AdtvContentProps) {
   const re = initialTanzen.map((item) => ({
     name: item.name,
     temp: item.temp,
-    // bpm: item.bpm,
+    elemente: item.elemente,
+    figuren: item.figuren,
   }));
-
+  function formatContent(raw: string): string {
+    return raw.replace(/\s*\&\s*/g, "-----");
+  }
   console.log("<🛑🛑🛑=re=🛑🛑🛑>", re);
 
   useEffect(() => {
@@ -38,23 +42,49 @@ export default function Stat({ initialTanzen }: AdtvContentProps) {
   }, [isActive]);
 
   return (
-    <div className="flex flex-col gap-1 mt-4">
+    <div className=" mt-4 w-full">
       {re &&
         re.map((item, idx) => {
           return (
-            <button
+            // <button
+            //   key={idx}
+            //   className="btn btn-empty max-w-[300px] !text-[16px] !flex !justify-between"
+            //   onMouseEnter={() => setisActive(item.name)}
+            //   onMouseLeave={() => setisActive("")}
+            // >
+            <div
               key={idx}
-              className="btn btn-empty max-w-[300px] !text-[16px] !flex !justify-between"
-              onMouseEnter={() => setisActive(item.name)}
-              onMouseLeave={() => setisActive("")}
+              className=" text-[16px]  border border-stone-200 w-full p-2"
             >
               <span>{item.name}</span>
-              <span
-                className={`!text-[var(--red-500)]  transition-all duration-200  ${item.name.trim() === isActive.trim() ? "opacity-100" : "opacity-0"}`}
-              >
-                {item.temp}
-              </span>
-            </button>
+              <div className="group flex items-center !text-[var(--teal-500)] text-[20px] cursor-pointer">
+                {/* Точка-маркер — всегда видна */}
+                <span className="w-4 h-4 rounded-full bg-current mr-2 inline-block shrink-0 align-middle" />
+
+                {/* Текст — скрыт по умолчанию, плавно проявляется при наведении на строку */}
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  {item.temp}
+                </span>
+              </div>
+
+              <div className="group flex items-center !text-[var(--teal-500)] text-[20px] cursor-pointer">
+                {/* Точка-маркер — всегда видна */}
+                <span className="w-4 h-4 rounded-full bg-current mr-2 inline-block shrink-0 align-middle" />
+
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  {formatContent(item.elemente)}
+                </span>
+              </div>
+
+              <div className="group flex items-center !text-[var(--teal-500)] text-[20px] cursor-pointer">
+                {/* Точка-маркер — всегда видна */}
+                <span className="w-4 h-4 rounded-full bg-current mr-2 inline-block shrink-0 align-middle" />
+
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  {formatContent(item.figuren)}
+                </span>
+              </div>
+            </div>
           );
         })}
     </div>
