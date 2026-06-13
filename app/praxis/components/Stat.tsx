@@ -23,7 +23,7 @@ interface AdtvContentProps {
   initialTanzen: Tanz[];
 }
 export default function Stat({ initialTanzen }: AdtvContentProps) {
-  const [isActive, setisActive] = useState<string>("");
+  // const [isActive, setisActive] = useState<string>("");
 
   const re = initialTanzen.map((item) => ({
     name: item.name,
@@ -36,51 +36,98 @@ export default function Stat({ initialTanzen }: AdtvContentProps) {
   }
   console.log("<🛑🛑🛑=re=🛑🛑🛑>", re);
 
-  useEffect(() => {
-    if (!isActive) return;
-    console.log("<===isActive===>", isActive);
-  }, [isActive]);
+  const [openSubItems, setOpenSubItems] = useState<Record<string, boolean>>({});
+
+  const toggleSubItem = (key: string) => {
+    setOpenSubItems((prev) => ({
+      ...prev,
+      [key]: !prev[key], // инвертируем значение (true/false)
+    }));
+  };
 
   return (
     <div className=" mt-4 w-full">
       {re &&
         re.map((item, idx) => {
+          // Формируем уникальные ключи для каждого подпункта этой строки
+          const tempKey = `${idx}-temp`;
+          const elemKey = `${idx}-elem`;
+          const figKey = `${idx}-fig`;
+
+          // Проверяем, открыт ли конкретный пункт кликом
+          const isTempOpen = !!openSubItems[tempKey];
+          const isElemOpen = !!openSubItems[elemKey];
+          const isFigOpen = !!openSubItems[figKey];
+
           return (
-            // <button
-            //   key={idx}
-            //   className="btn btn-empty max-w-[300px] !text-[16px] !flex !justify-between"
-            //   onMouseEnter={() => setisActive(item.name)}
-            //   onMouseLeave={() => setisActive("")}
-            // >
             <div
               key={idx}
-              className=" text-[16px]  border border-stone-200 w-full p-2"
+              className="text-[16px] border border-stone-200 w-full p-2 bg-[#1e293b]/10 rounded-xl"
             >
-              <span>{item.name}</span>
-              <div className="group flex items-center !text-[var(--teal-500)] text-[20px] cursor-pointer">
+              <span className="font-bold text-slate-200 block mb-1">
+                {item.name}
+              </span>
+
+              {/* 1. Блок Temp */}
+              <div
+                onClick={() => toggleSubItem(tempKey)} // клик переключает видимость
+                className="group   !text-[var(--teal-500)] text-[20px] cursor-pointer mb-2"
+              >
                 {/* Точка-маркер — всегда видна */}
                 <span className="w-4 h-4 rounded-full bg-current mr-2 inline-block shrink-0 align-middle" />
 
-                {/* Текст — скрыт по умолчанию, плавно проявляется при наведении на строку */}
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                {/* Текст — если открыт кликом, то горит всегда. Если нет — плавно проявляется по ховеру на ПК */}
+                <span
+                  className={`transition-opacity duration-500 ${
+                    isTempOpen
+                      ? "opacity-100"
+                      : "opacity-0 group-hover:opacity-100"
+                  }`}
+                >
                   {item.temp}
                 </span>
               </div>
 
-              <div className="group flex items-center !text-[var(--teal-500)] text-[20px] cursor-pointer">
-                {/* Точка-маркер — всегда видна */}
-                <span className="w-4 h-4 rounded-full bg-current mr-2 inline-block shrink-0 align-middle" />
+              {/* 2. Блок Elemente */}
+              <div
+                onClick={() => toggleSubItem(elemKey)}
+                className="group flex  !text-[var(--teal-500)] text-[20px] cursor-pointer gap-2  mb-2"
+              >
+                <span
+                  className="w-4 h-4 rounded-full bg-current  inline-block shrink-0 align-middle"
+                  style={{ lineHeight: 1 }}
+                />
 
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <span
+                  className={`transition-opacity duration-500 ${
+                    isElemOpen
+                      ? "opacity-100"
+                      : "opacity-0 group-hover:opacity-100"
+                  }`}
+                  style={{ lineHeight: 1 }}
+                >
                   {formatContent(item.elemente)}
                 </span>
               </div>
 
-              <div className="group flex items-center !text-[var(--teal-500)] text-[20px] cursor-pointer">
-                {/* Точка-маркер — всегда видна */}
-                <span className="w-4 h-4 rounded-full bg-current mr-2 inline-block shrink-0 align-middle" />
+              {/* 3. Блок Figuren */}
+              <div
+                onClick={() => toggleSubItem(figKey)}
+                className="group flex  !text-[var(--teal-500)] text-[20px] "
+              >
+                <span
+                  className="w-4 h-4 rounded-full bg-current mr-2 inline-block shrink-0 align-middle cursor-pointer"
+                  style={{ lineHeight: 1 }}
+                />
 
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <span
+                  className={`transition-opacity duration-500  ${
+                    isFigOpen
+                      ? "opacity-100"
+                      : "opacity-0 group-hover:opacity-100"
+                  }`}
+                  style={{ lineHeight: 1 }}
+                >
                   {formatContent(item.figuren)}
                 </span>
               </div>
