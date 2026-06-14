@@ -95,7 +95,7 @@ export default function Stat({ initialTanzen }: AdtvContentProps) {
         </button>
       </div>
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] gap-3">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] gap-x-6 gap-y-1">
         {re &&
           re.map((item) => {
             // Формируем уникальные ключи для каждого подпункта этой строки

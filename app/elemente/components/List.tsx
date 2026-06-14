@@ -12,16 +12,34 @@ interface ListProps {
 }
 
 export default function List({ initialElements }: ListProps) {
-  const [isActive, setisActive] = useState<string>(
-    initialElements.find((t) => t.name === "Achsendrehung (paarweise getanzt)")
-      ? "Achsendrehung (paarweise getanzt)"
-      : (initialElements[0]?.name || "")
-  );
+  const [isActive, setisActive] = useState<string>("");
   const [selectedMobileArea, setSelectedMobileArea] = useState<string>("einz");
   const [elements] = useState<Element[]>(initialElements);
-  
+  const [showOnlyP, setShowOnlyP] = useState(false);
+
+  const filteredElements = elements.filter((item) => {
+    if (!showOnlyP) return true;
+    const prefix = item.name.split("--")[0];
+    return prefix.includes("P");
+  });
+
   function formatContent(raw: string): string {
     return raw.replace(/\s*\&\s*/g, "\n\n");
+  }
+
+  function renderItemName(name: string) {
+    const index = name.indexOf("--");
+    if (index !== -1) {
+      const before = name.substring(0, index);
+      const after = name.substring(index + 2);
+      return (
+        <>
+          <span className="text-[0.8em] !text-teal-500">{before} </span>
+          {after}
+        </>
+      );
+    }
+    return name;
   }
 
   // Scroll to details on mobile when an item is selected
@@ -39,7 +57,6 @@ export default function List({ initialElements }: ListProps) {
     }
   }, [isActive]);
 
-
   const categories = [
     { key: "einz", label: "1 Schritt" },
     { key: "zwei", label: "2 Schritte" },
@@ -48,6 +65,19 @@ export default function List({ initialElements }: ListProps) {
 
   return (
     <div className="pt-4 grid grid-cols-1 md:grid-cols-[250px_1fr] gap-6">
+      {/* Filter Checkbox */}
+      <div className="md:col-span-2 flex items-center px-2">
+        <label className="flex items-center gap-2 text-sm text-slate-300 cursor-pointer hover:text-white transition-colors">
+          <input
+            type="checkbox"
+            checked={showOnlyP}
+            onChange={(e) => setShowOnlyP(e.target.checked)}
+            className="w-4 h-4 rounded border-slate-700 bg-slate-800 text-teal-500 focus:ring-teal-500/50 focus:ring-offset-slate-900 cursor-pointer"
+          />
+          'P' (PM, PMH ...)
+        </label>
+      </div>
+
       {/* Mobile view: Horizontal scrollable categories */}
       <div className="md:hidden w-full overflow-hidden">
         <div className="flex gap-2 overflow-x-auto pb-3 mb-2 scrollbar-none">
@@ -71,7 +101,7 @@ export default function List({ initialElements }: ListProps) {
 
         {/* Mobile buttons list */}
         <div className="flex flex-wrap gap-2 mt-4 mb-2">
-          {elements
+          {filteredElements
             .filter((it) => it.marker === selectedMobileArea)
             .map((item) => (
               <button
@@ -87,15 +117,15 @@ export default function List({ initialElements }: ListProps) {
                 }`}
                 onClick={() => setisActive(item.name)}
               >
-                {item.name}
+                {renderItemName(item.name)}
               </button>
             ))}
         </div>
       </div>
 
       {/* Desktop view: Sidebar */}
-      <div className="hidden md:flex flex-col gap-1.5 max-h-[80vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-transparent">
-        {elements.map((item) => (
+      <div className="hidden md:flex flex-col gap-1.5  pr-2 ">
+        {filteredElements.map((item) => (
           <button
             key={item.name}
             className={`btn btn-empty !py-1.5 px-4 rounded-xl border text-left text-sm transition-all duration-200 cursor-pointer ${
@@ -109,7 +139,7 @@ export default function List({ initialElements }: ListProps) {
             }`}
             onClick={() => setisActive(item.name)}
           >
-            {item.name}
+            {renderItemName(item.name)}
           </button>
         ))}
       </div>
@@ -134,7 +164,7 @@ export default function List({ initialElements }: ListProps) {
                     style={{ lineHeight: "26px" }}
                   >
                     <h3 className="mb-4 text-2xl md:text-3xl font-bold italic tracking-wide !text-[var(--sky-400)] !whitespace-normal">
-                      {item.name}
+                      {renderItemName(item.name)}
                     </h3>
                     {formatContent(item.content)}
                   </motion.div>

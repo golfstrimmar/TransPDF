@@ -20,6 +20,10 @@ export type Tanz = {
 };
 import tanzenData from "@/public/data/tanzen.json";
 import Stat from "@/app/praxis/components/Stat";
+
+import elData from "@/public/data/el.json";
+import ElementStat, { ElementData } from "@/app/praxis/components/ElementStat";
+
 export default function Praxis() {
   return (
     <div
@@ -27,6 +31,8 @@ export default function Praxis() {
       style={{ paddingTop: "60px" }}
     >
       <Stat initialTanzen={tanzenData as Tanz[]} />
+      <hr className="my-8 border-slate-700/50" />
+      <ElementStat initialElements={elData as ElementData[]} />
     </div>
   );
 }
