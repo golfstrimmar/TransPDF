@@ -50,10 +50,11 @@ export default function ElementStat({ initialElements }: ElementStatProps) {
 
   return (
     <div className="mt-8 w-full flex flex-col gap-6">
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] gap-x-6 gap-y-1">
-        
+      <div className="grid grid-cols-1 xl:grid-cols-[repeat(auto-fit,minmax(600px,1fr))] gap-x-6 gap-y-4">
         {sections.map((sec) => {
-          const sectionElements = pElements.filter((el) => el.marker === sec.key);
+          const sectionElements = pElements.filter(
+            (el) => el.marker === sec.key,
+          );
           const isContentOpen = !!openSubItems[sec.key];
 
           return (
@@ -74,7 +75,9 @@ export default function ElementStat({ initialElements }: ElementStatProps) {
 
                 <div
                   className={`transition-opacity duration-500 ${
-                    isContentOpen ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                    isContentOpen
+                      ? "opacity-100"
+                      : "opacity-0 group-hover:opacity-100"
                   } flex flex-col gap-1 text-slate-200`}
                 >
                   {sectionElements.length > 0 ? (
@@ -84,14 +87,15 @@ export default function ElementStat({ initialElements }: ElementStatProps) {
                       </div>
                     ))
                   ) : (
-                    <div className="text-slate-500 italic text-sm">Нет элементов</div>
+                    <div className="text-slate-500 italic text-sm">
+                      Нет элементов
+                    </div>
                   )}
                 </div>
               </div>
             </div>
           );
         })}
-
       </div>
     </div>
   );
