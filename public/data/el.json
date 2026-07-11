@@ -46,12 +46,12 @@
   },
   {
     "name": "PMH --  Kick (Flick)",
-    "content": "Rock'n'Roll, Jive, Samba& • Ein Anheben des Oberschenkels und anschließendes Strecken des Unterschenkels mit gestreckter& Fußspitze. In Rock'n Roll und Jive wird die als Kick beschriebene Aktion wie ein Flick ausgeführt, der& Oberschenkel wird also vor dem Aufsetzten noch einmal angehoben.& • Der Kick kann vorwärts oder diagonal vorwärts getanzt werden.& • Подъём бедра и последующее растяжение голени с прямой пяткой. В Рок-н-Ролле и Джайве описанная акция кика выполняется как флик, бедро поднимается& перед посадкой еще раз.& • Кик может быть впереди или диагонально впереди.& Латинский Хайп (также известный как Меренге Хайп или Противоположный Хайп)& ",
+    "content": " Rock'n'Roll, Jive, Samba& • Ein Anheben des Oberschenkels und anschließendes Strecken des Unterschenkels mit gestreckter Fußspitze. In Rock'n Roll und Jive wird die als Kick beschriebene Aktion wie ein Flick ausgeführt, der Oberschenkel wird also vor dem Aufsetzten noch einmal angehoben.& • Der Kick kann vorwärts oder diagonal vorwärts getanzt werden.& • Подъём бедра и последующее растяжение голени с прямой пяткой. В Рок-н-Ролле и Джайве описанная акция кика выполняется как флик, бедро поднимается перед посадкой еще раз.& • Кик может быть впереди или диагонально впереди. Латинский Хайп (также известный как Меренге Хайп или Противоположный Хайп)& ",
     "marker": "einz"
   },
   {
     "name": "PMH -- Latin Hip (auch Merengue Hip oder Opposite Hip genannt)",
-    "content": "Jive, Merengue, Salsa& • Die dem Schreitbein entgegengesetzte Hüfte wird seitwärts, leicht rückwärts bewegt.& Der Brustkorb wird entgegengesetzt zur Hüfte seitwärts bewegt.& • Die Schritte können in jede beliebige Richtung getanzt werden.& Beginne mit Gewicht auf dem rechten Bein, Standbeinknie fast gerade, Hüfte rechts.& Aktion& Rhythmus& LF klein sw, Knie gebeugt, Hüfte re.& li. Knie fast strecken mit gleichzeitigem Hüftwechsel n.li.& RF fast schließen, Knie gebeugt, Hüfte li.& re. Knie fast strecken mit gleichzeitigem Hüftwechsel n.re.&• Противоположная бедра в сторону, слегка назад перемещается.& Грудь перемещается в противоположную сторону к бедру.& • Шаги могут быть танцованы в любом направлении.& Начать с веса на правой ноге, стопиноге почти прямой, бедра правые.& Действие& Ритм& МФ малый sw, колено согнуто, бедра правые.& л. колено почти выпрямить с одновременным сменой бедер н.л.& ПФ почти закрыть, колено согнуто, бедра левые.& р. колено почти выпрямить с одновременным сменой бедер н.р.& Латинское Крест (в Сальсе также известно как Хук)& ",
+    "content": "Jive, Merengue, Salsa& • Die dem Schreitbein entgegengesetzte Hüfte wird seitwärts, leicht rückwärts bewegt.& Der Brustkorb wird entgegengesetzt zur Hüfte seitwärts bewegt.& • Die Schritte können in jede beliebige Richtung getanzt werden.& Beginne mit Gewicht auf dem rechten Bein, Standbeinknie fast gerade, Hüfte rechts.& Aktion& Rhythmus& LF klein sw, Knie gebeugt, Hüfte re.& li. Knie fast strecken mit gleichzeitigem Hüftwechsel n.li.& RF fast schließen, Knie gebeugt, Hüfte li.& re. Knie fast strecken mit gleichzeitigem Hüftwechsel n.re.&• Противоположное шаговой ноге бедро смещается в сторону и слегка назад.& Грудная клетка смещается в сторону в противоположном направлении относительно бедра.& • Шаги могут быть танцованы в любом направлении.& Начать с веса на правой ноге, стопиноге почти прямой, бедра правые.& Действие& Ритм& МФ малый sw, колено согнуто, бедра правые.& л. колено почти выпрямить с одновременным сменой бедер н.л.& ПФ почти закрыть, колено согнуто, бедра левые.& р. колено почти выпрямить с одновременным сменой бедер н.р.& Латинское Крест (в Сальсе также известно как Хук)& ",
     "marker": "einz"
   },
   {
@@ -61,12 +61,12 @@
   },
   {
     "name": "PMH -- Platzschritte",
-    "content": "Foxtrott, Discofox, Salsa, Merengue, Rumba, Cha Cha Cha, Paso Doble& • Platzschrite werden an der Stelle oder mit sehr kleiner seitlicher Fortbewegung mit oder ohne Drehung& nach rechts oder links getanzt.& • Местные шаги танцуются в месте или с очень малой боковой передвижкой с или без вращения вправо или влево.& ",
+    "content": "Foxtrott, Discofox, Salsa, Merengue, Rumba, Cha Cha Cha, Paso Doble& • Platzschrite werden an der Stelle oder mit sehr kleiner seitlicher Fortbewegung mit oder ohne Drehung& nach rechts oder links getanzt.&& • Местные шаги танцуются в месте или с очень малой боковой передвижкой с или без вращения вправо или влево.& ",
     "marker": "einz"
   },
   {
     "name": "PMH -- Point",
-    "content": "Samba • Das Aufsetzen des ausgestreckten Beines mit Abstand zum Körper auf der Fußspitze, entweder ohne& Gewicht oder mit Teilgewicht.&&& • Посадка вытянутой ноги с расстоянием от тела на пятке, либо без веса, либо с частичным весом.&",
+    "content": "Samba& • Das Aufsetzen des ausgestreckten Beines mit Abstand zum Körper auf der Fußspitze, entweder ohne& Gewicht oder mit Teilgewicht.&& • Посадка вытянутой ноги с расстоянием от тела на пятке, либо без веса, либо с частичным весом.&",
     "marker": "einz"
   },
   {

@@ -24,7 +24,7 @@ export default function List({ initialElements }: ListProps) {
   });
 
   function formatContent(raw: string): string {
-    return raw.replace(/\s*\&\s*/g, "\n\n");
+    return raw.replace(/\s*\&\s*/g, "\n");
   }
 
   function renderItemName(name: string) {
