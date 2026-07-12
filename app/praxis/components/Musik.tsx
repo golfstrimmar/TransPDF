@@ -51,15 +51,15 @@ export default function MusikElementStat({
               onMouseLeave={() => setFooOpen("")}
               className="group flex  text-[20px] cursor-pointer gap-4 items-start"
             >
-              <div className="flex items-center gap-2">
-                <span className="!min-w-4 !h-4 rounded-full bg-[var(--teal-500)]  inline-block" />
-                <div
-                  className={`transition-opacity duration-500  flex flex-col gap-1 text-slate-200`}
+              <div className="flex flex-col gap-2">
+                <h3
+                  className={`transition-opacity duration-500  flex items-center gap-1 text-slate-200`}
                 >
+                  <span className="!w-4 !h-4 rounded-full bg-[var(--teal-500)]  inline-block" />{" "}
                   {foo.name}
-                </div>
+                </h3>
                 <div
-                  className={`ml-20 transition-all duration-200 ${fooOpen === foo.name ? "opacity-100" : "opacity-0"}`}
+                  className={` transition-all duration-200 ${fooOpen === foo.name ? "opacity-100" : "opacity-0"}`}
                 >
                   {renderContentWithLines(foo.content)}
                 </div>
