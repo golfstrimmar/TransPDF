@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Tempo",
+    "content": "Das Tempo eines Musikstückes wird in Takten pro Minute (TPM) bzw. in Beats (= Taktschläge) per Minute (BPM) gemessen. Zur Messung zählt man einen nach dem anderen Takt mit fortlaufenden Zahlen beim Taktanfang, beim 4/4-Takt z. B. 1 2 3 4, 2 2 3 4, 3 2 3 4, 4 2 3 4 usw. Bei den anderen Taktarten verfährt man entsprechend. Nach einer Minute hat man das Ergebnis. Man kann auch nach einer halben Minute die Taktzahl mit zwei multiplizieren (Beispiel 4/4-Takt). Mit einer anderen Methode zählt man in einem geraden Takt fortlaufend alle halben Noten und hat nach einer halben Minute das genaue Ergebnis.",
+    "marker": "einz"
+  },
+  {
+    "name": "Charakteristik",
+    "content": "Die Tänze unterscheiden sich nach folgenden Kriterien: &• Der Taktart &• Dem Tempo Der Instrumentierung &• Den rhythmischen Merkmalen",
+    "marker": "einz"
+  },
+  {
+    "name": "Taktart",
+    "content": "Bei der Taktart genügt es herauszuhören, ob es sich um einen geraden Takt oder einen ungeraden Takt handelt.",
+    "marker": "einz"
+  },
+  {
+    "name": "Instrumentierung",
+    "content": "Bei der Instrumentierung unterscheidet man nach Rhythmus- und nach Melodieinstrumenten.&🟢Rhythmusinstrumente &🔹Schlagzeug besteht aus Bass Drum, Snare, Tom, Hi Hat und Becken. &🔹Als \"Schlagwerkzeuge\" gibt es die Schlagstöcke und den Besen. & Lateinamerikanischen Tänzen  &🔹\"Fellklinger\", auch Trommeln (Congas, Bongos,Tambourin, Timbales) &🔹\"Selbstklinger\" wie Claves, Cowbells oder Glocke,Agogos, Guiro oder Gurke und Rasseln. &🟢Melodieinstrumente sind &-Saiteninstrumente &🔹Streichinstrumente wie Violine und Cello &🔹Tasteninstrumente wie Klavier und Flügel &🔹Zupfinstrumente wie Gitarre, E-Gitarre,Bass &-Blasinstrumente &🔹Blechblasinstrumente wie Trompete und Posaune &🔹Holzblasinstrumente wie Klarinette und Flöte &🔹Harmonikainstrumente wie Akkordeon und Bandoneon&✅Das Haupt-Rhythmusinstrument in den Standardtänzen Langsamer Walzer, Wiener Walzer, Quickstep und Foxtrott, zum Teil auch im Tango, sowie im Blues und in allen Boogieformen ist das Schlagzeug. &✅Streichinstrumente und Holzblasinstrumente sind z. B. typisch für den Lang- und den Wiener Walzer & ✅Blechblasinstrumente für Blues, Foxtrott, Quickstep und Slofoxrott &✅Klavier und Flügel für Boogie Woogie und Jive &✅das Bandoneon für den Tango Argentino",
+    "marker": "einz"
+  }
+]

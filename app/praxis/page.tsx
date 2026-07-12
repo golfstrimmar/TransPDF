@@ -6,6 +6,20 @@ import React, {
   useLayoutEffect,
   useRef,
 } from "react";
+
+// 1. Все импорты данных
+import tanzenData from "@/public/data/tanzen.json";
+import elData from "@/public/data/el.json";
+import elDataMusik from "@/public/data/elMusik.json";
+
+// 2. Все импорты компонентов и их типов
+import Stat from "@/app/praxis/components/Stat";
+import MusikElementStat, {
+  type MusikElementData,
+} from "@/app/praxis/components/Musik";
+import ElementStat, { ElementData } from "@/app/praxis/components/ElementStat";
+
+// 3. Объявление локальных типов
 export type Tanz = {
   name: string;
   musikrichtung: string;
@@ -18,11 +32,6 @@ export type Tanz = {
   figuren: string;
   images: string;
 };
-import tanzenData from "@/public/data/tanzen.json";
-import Stat from "@/app/praxis/components/Stat";
-
-import elData from "@/public/data/el.json";
-import ElementStat, { ElementData } from "@/app/praxis/components/ElementStat";
 
 export default function Praxis() {
   return (
@@ -31,8 +40,12 @@ export default function Praxis() {
       style={{ paddingTop: "60px" }}
     >
       <Stat initialTanzen={tanzenData as Tanz[]} />
-      <hr className="my-8 border-slate-700/50" />
+      <hr className="my-8 border-slate-500" />
       <ElementStat initialElements={elData as ElementData[]} />
+      <hr className="my-8 border-slate-500" />
+      <MusikElementStat
+        initialMusikElements={elDataMusik as MusikElementData[]}
+      />
     </div>
   );
 }
