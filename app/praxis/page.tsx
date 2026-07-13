@@ -11,12 +11,15 @@ import React, {
 import tanzenData from "@/public/data/tanzen.json";
 import elData from "@/public/data/el.json";
 import elDataMusik from "@/public/data/elMusik.json";
+import elDataAllgemein from "@/public/data/allgemeinerteil.json";
 
-// 2. Все импорты компонентов и их типов
 import Stat from "@/app/praxis/components/Stat";
 import MusikElementStat, {
   type MusikElementData,
 } from "@/app/praxis/components/Musik";
+import AllgemeinElementStat, {
+  type AllgemeinElementData,
+} from "@/app/praxis/components/Allgemein";
 import ElementStat, { ElementData } from "@/app/praxis/components/ElementStat";
 
 // 3. Объявление локальных типов
@@ -40,9 +43,34 @@ export default function Praxis() {
       style={{ paddingTop: "60px" }}
     >
       <Stat initialTanzen={tanzenData as Tanz[]} />
-      <hr className="my-8 border-slate-500" />
+      <div className="relative flex items-center justify-center my-8">
+        <div className="absolute inset-0 flex items-center" aria-hidden="true">
+          <div className="w-full border-t border-slate-500"></div>
+        </div>
+        <span className="relative bg-[#0f172a] px-4 text-sm font-medium text-slate-400 uppercase tracking-wider">
+          Allgemein
+        </span>
+      </div>
+      <AllgemeinElementStat
+        initialAllgemeinElements={elDataAllgemein as AllgemeinElementData[]}
+      />
+      <div className="relative flex items-center justify-center my-8">
+        <div className="absolute inset-0 flex items-center" aria-hidden="true">
+          <div className="w-full border-t border-slate-500"></div>
+        </div>
+        <span className="relative bg-[#0f172a] px-4 text-sm font-medium text-slate-400 uppercase tracking-wider">
+          Elements
+        </span>
+      </div>
       <ElementStat initialElements={elData as ElementData[]} />
-      <hr className="my-8 border-slate-500" />
+      <div className="relative flex items-center justify-center my-8">
+        <div className="absolute inset-0 flex items-center" aria-hidden="true">
+          <div className="w-full border-t border-slate-500"></div>
+        </div>
+        <span className="relative bg-[#0f172a] px-4 text-sm font-medium text-slate-400 uppercase tracking-wider">
+          Musik
+        </span>
+      </div>
       <MusikElementStat
         initialMusikElements={elDataMusik as MusikElementData[]}
       />
